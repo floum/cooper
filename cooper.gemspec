@@ -8,4 +8,6 @@ Gem::Specification.new do |spec|
   spec.email = 'efflamm.castel@gmail.com'
   spec.files = []
   spec.license = 'MIT'
+
+  spec.add_development_dependency 'rspec', '~> 3.2'
 end
