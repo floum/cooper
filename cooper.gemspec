@@ -10,4 +10,5 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
 
   spec.add_development_dependency 'rspec', '~> 3.2'
+  spec.add_development_dependency 'guard-rspec', '~> 4.5'
 end
