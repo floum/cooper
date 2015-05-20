@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.files = []
   spec.license = 'MIT'
 
-  spec.add_development_dependency 'rspec', '~> 3.2'
-  spec.add_development_dependency 'guard-rspec', '~> 4.5'
+  spec.add_development_dependency 'rspec', '~> 3.2.0'
+  spec.add_development_dependency 'guard-rspec', '~> 4.5.0'
+  spec.add_development_dependency 'rubocop', '~> 0.31.0'
+  spec.add_development_dependency 'guard-rubocop', '~> 1.2.0'
 end
