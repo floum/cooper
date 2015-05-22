@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+require 'json'
+require 'optparse'
+
+options = {}
+
+OptionParser.new do |opts|
+  opts.on('--version', 'prints the version') do
+    options[:version] = true
+  end
+end.parse!
+
+if options[:version]
+  puts 'Cooper 0.0.0'
+  exit 0
+end
+
+puts JSON.dump({})
