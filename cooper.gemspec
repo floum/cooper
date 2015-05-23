@@ -7,9 +7,13 @@ Gem::Specification.new do |spec|
   spec.description = 'A revisioning database'
   spec.authors = ['Efflam Castel']
   spec.email = 'efflamm.castel@gmail.com'
-  spec.files = []
+  spec.files =
+    `git ls-files -z`.split("\x0")
+      .reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables << 'cooper'
   spec.license = 'MIT'
+
+  spec.add_runtime_dependency 'thor', '~> 0.19'
 
   spec.add_development_dependency 'rspec', '~> 3.2'
   spec.add_development_dependency 'guard-rspec', '~> 4.5'

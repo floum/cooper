@@ -1,18 +1,12 @@
 #!/usr/bin/env ruby
-require 'json'
-require 'optparse'
+require 'thor'
 
-options = {}
-
-OptionParser.new do |opts|
-  opts.on('--version', 'prints the version') do
-    options[:version] = true
+# the Thor class for the cooper command-line interface
+class CooperCLI < Thor
+  desc 'read', 'read the cooper item'
+  def read
+    puts '{}'
   end
-end.parse!
-
-if options[:version]
-  puts 'Cooper 0.0.0'
-  exit 0
 end
 
-puts JSON.dump({})
+CooperCLI.start
