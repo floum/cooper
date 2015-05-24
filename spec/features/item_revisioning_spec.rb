@@ -5,12 +5,10 @@ RSpec.describe 'Item revisioning', type: :aruba do
     run_simple 'cooper update author:floum version:0.0.1'
     run_simple 'cooper read'
     assert_partial_output(
-      '{
-"name":"cooper",
-"version":"0.0.1",
-"author":"floum",
-"location":"unknown"
-}'.gsub("\n", ''),
+      '{"name":"cooper",
+        "version":"0.0.1",
+        "author":"floum",
+        "location":"unknown"}'.gsub(/\n\s+/, ''),
       output_from('cooper read'))
   end
 end

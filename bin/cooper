@@ -1,11 +1,26 @@
 #!/usr/bin/env ruby
 require 'thor'
+require 'json'
 
 # the Thor class for the cooper command-line interface
 class CooperCLI < Thor
+  desc 'update', 'update the cooper item'
+  def update(*attributes)
+    changes = Hash[attributes.map { |attribute| attribute.split(':') }]
+    File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |f|
+      f.puts(changes.to_json)
+    end
+  end
+
   desc 'read', 'read the cooper item'
+  method_option :at
   def read
-    puts '{}'
+    last_line = options[:at] ? options[:at].to_i : -1
+    data = File.open("#{ENV['HOME']}/.cooper_item", 'a+').readlines
+    result = data[0..last_line].each_with_object({}) do |line, cooper|
+      cooper.merge!(JSON.parse(line))
+    end
+    puts result.to_json
   end
 end
 
