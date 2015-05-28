@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'thor'
 require 'json'
+require 'cooper'
 
 # the Thor class for the cooper command-line interface
 class CooperCLI < Thor
@@ -8,32 +9,29 @@ class CooperCLI < Thor
 
   desc 'version', 'prints the version'
   def version
-    puts 'Cooper v0.0.0'
+    puts "Cooper v#{Cooper::VERSION}"
+  end
+
+  desc 'reset', 'resets the cooper item'
+  def reset
+    Cooper.reset
   end
 
   desc 'update ATTRIBUTES', 'update the cooper item'
   def update(*attributes)
     changes = Hash[attributes.map { |attribute| attribute.split(':') }]
-    File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |f|
-      f.puts(changes.to_json)
-    end
+    Cooper.update(changes)
   end
 
   desc 'read', 'read the cooper item'
   method_option :at, type: :numeric, default: -1
   def read
-    data = File.open("#{ENV['HOME']}/.cooper_item", 'a+').readlines
-    result = data[0..options[:at]].each_with_object({}) do |line, cooper|
-      cooper.merge!(JSON.parse(line))
-    end
-    puts result.reject { |_, v| v.nil? }.to_json
+    puts Cooper.read(options[:at]).to_json
   end
 
   desc 'rm ATTRIBUTE', 'removes the attribute from the cooper item'
   def rm(attribute)
-    File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |file|
-      file.puts({ attribute => nil }.to_json)
-    end
+    Cooper.delete(attribute)
   end
 end
 

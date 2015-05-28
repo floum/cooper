@@ -1,11 +1,12 @@
 RSpec.describe 'Item revisioning', type: :aruba do
   before :all do
-    `rm ~/.cooper_item`
+    run_simple 'cooper reset'
     run_simple 'cooper update name:cooper version:0.0.0'
     run_simple 'cooper update author:floum location:unknown'
     run_simple 'cooper rm location'
     run_simple 'cooper update version:0.0.1'
   end
+
   it 'tracks the life of a single item' do
     run_simple 'cooper read'
     assert_partial_output(
