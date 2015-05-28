@@ -4,8 +4,16 @@ require 'json'
 
 # the Thor class for the cooper command-line interface
 class CooperCLI < Thor
-  desc 'update', 'update the cooper item'
+  map '-v' => 'version'
+
+  desc 'version', 'prints the version'
+  def version
+    puts 'Cooper v0.0.0'
+  end
+
+  desc 'update ATTRIBUTES', 'update the cooper item'
   def update(*attributes)
+    p options
     changes = Hash[attributes.map { |attribute| attribute.split(':') }]
     File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |f|
       f.puts(changes.to_json)
@@ -13,15 +21,14 @@ class CooperCLI < Thor
   end
 
   desc 'read', 'read the cooper item'
-  method_option :at
+  method_option :at, type: :numeric, default: -1
   def read
-    last_line = options[:at] ? options[:at].to_i : -1
     data = File.open("#{ENV['HOME']}/.cooper_item", 'a+').readlines
-    result = data[0..last_line].each_with_object({}) do |line, cooper|
+    result = data[0..options[:at]].each_with_object({}) do |line, cooper|
       cooper.merge!(JSON.parse(line))
     end
     puts result.to_json
   end
 end
 
-CooperCLI.start
+CooperCLI.start(ARGV)
