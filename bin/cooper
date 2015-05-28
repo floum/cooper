@@ -13,7 +13,6 @@ class CooperCLI < Thor
 
   desc 'update ATTRIBUTES', 'update the cooper item'
   def update(*attributes)
-    p options
     changes = Hash[attributes.map { |attribute| attribute.split(':') }]
     File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |f|
       f.puts(changes.to_json)
@@ -27,7 +26,14 @@ class CooperCLI < Thor
     result = data[0..options[:at]].each_with_object({}) do |line, cooper|
       cooper.merge!(JSON.parse(line))
     end
-    puts result.to_json
+    puts result.reject { |_, v| v.nil? }.to_json
+  end
+
+  desc 'rm ATTRIBUTE', 'removes the attribute from the cooper item'
+  def rm(attribute)
+    File.open("#{ENV['HOME']}/.cooper_item", 'a+') do |file|
+      file.puts({ attribute => nil }.to_json)
+    end
   end
 end
 
