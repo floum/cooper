@@ -5,10 +5,8 @@ A revisioning database project
 As of now, Cooper only manages one item.
 
 ## Getting Started
-  
-Cooper currently tracks the life of a single item.
+
 Cooper uses the `ENV['HOME']` environment variable to store data.
-This will change before v1.0.0
 
 Install cooper from the command prompt
 
@@ -17,6 +15,7 @@ Install cooper from the command prompt
 Start populating your Cooper Item with attributes from the command line
 
   `cooper update name:cooper`
+
   `cooper update version:0.0.1 date:2015-05-29'
 
 Retrieve data from any update (starting from 0
@@ -28,9 +27,7 @@ See `cooper help` for more
 
 ## What's next
   
-version 0.0.2 will provide the command `cooper start` to bind a cooper server to an IP port
-
-version 0.0.3 will provide support for a collection of items
+Providing the command `cooper start` to bind a cooper server to an IP port and providing support for a collection of items should be the next implemented features
 
 ## Contributing
 

@@ -7,7 +7,7 @@ module Cooper
     datastore(&:reset)
   end
 
-  def self.read(revision)
+  def self.read(revision = -1)
     datastore do |datastore|
       datastore.read(revision)
     end

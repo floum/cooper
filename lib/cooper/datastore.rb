@@ -1,3 +1,5 @@
+require 'json'
+
 module Cooper
   # Interface class for the cooper data store
   class DataStore < File
