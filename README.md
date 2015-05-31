@@ -1,5 +1,7 @@
 # Cooper
 
+[![Code Climate](https://codeclimate.com/github/floum/cooper/badges/gpa.svg)](https://codeclimate.com/github/floum/cooper) [![Test Coverage](https://codeclimate.com/github/floum/cooper/badges/coverage.svg)](https://codeclimate.com/github/floum/cooper/coverage)
+
 A revisioning database project
 
 As of now, Cooper only manages one item.
