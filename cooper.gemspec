@@ -6,6 +6,7 @@ require 'cooper/version'
 Gem::Specification.new do |spec|
   spec.name = 'cooper'
   spec.version = Cooper::VERSION
+  spec.required_ruby_version = '>= 2.2'
   spec.date = '2015-05-21'
   spec.summary = 'Cooper revisioning database project'
   spec.description = 'A revisioning database'

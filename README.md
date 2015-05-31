@@ -16,7 +16,7 @@ Start populating your Cooper Item with attributes from the command line
 
   `cooper update name:cooper`
 
-  `cooper update version:0.0.1 date:2015-05-29'
+  `cooper update version:0.0.1 date:2015-05-29`
 
 Retrieve data from any update (starting from 0
 
