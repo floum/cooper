@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.license = 'MIT'
 
-  spec.add_runtime_dependency 'bundler', '~> 1.9'
+  spec.add_runtime_dependency 'bundler', '~> 1.7'
   spec.add_runtime_dependency 'thor', '~> 0.19'
 
   spec.add_development_dependency 'rspec', '~> 3.2'
