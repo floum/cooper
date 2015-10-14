@@ -4,7 +4,7 @@
 
 A revisioning database project
 
-As of now, Cooper only manages one item.
+As of now, Cooper only manages, can be a hash.
 
 ## Getting Started
 
@@ -27,9 +27,9 @@ Retrieve data from any update (starting from 0
 
 See `cooper help` for more
 
-## What's next
+## Features
   
-Providing the command `cooper start` to bind a cooper server to an IP port and providing support for a collection of items should be the next implemented features
+* cooper server
 
 ## Contributing
 

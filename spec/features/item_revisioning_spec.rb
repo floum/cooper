@@ -9,19 +9,16 @@ RSpec.describe 'Item revisioning', type: :aruba do
 
   it 'tracks the life of a single item' do
     run_simple 'cooper read'
-    assert_partial_output(
-      '{"name":"cooper",
+    expect(stdout_from('cooper read')).to match('{"name":"cooper",
         "version":"0.0.1",
-        "author":"floum"}'.gsub(/\n\s+/, ''),
-      output_from('cooper read'))
+        "author":"floum"}'.gsub(/\n\s+/, ''))
   end
 
   it 'ignores the deleted items' do
     run_simple 'cooper read --at 2'
-    assert_partial_output(
+    expect(stdout_from('cooper read --at 2')).to match(
       '{"name":"cooper",
         "version":"0.0.0",
-        "author":"floum"}'.gsub(/\n\s+/, ''),
-      output_from('cooper read --at 2'))
+        "author":"floum"}'.gsub(/\n\s+/, ''))
   end
 end

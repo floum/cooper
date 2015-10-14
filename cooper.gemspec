@@ -32,5 +32,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.31'
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
   spec.add_development_dependency 'aruba', '~> 0.6'
-  spec.add_development_dependency 'aruba-rspec', '~> 1.0'
 end
