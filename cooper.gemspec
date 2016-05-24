@@ -16,11 +16,11 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'http://localhost'
   else
-    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+    raise 'Upgrade RubyGems to protect against public gem pushes.'
   end
 
   spec.files = `git ls-files -z`.split("\x0")
-                                .reject { |f| f.match(%r{^(test|spec|features)/}) }
+                                .reject { |f| f.match(%r{^(spec)/}) }
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'mongoid', '~> 5.1'
@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 11.1'
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
+  spec.add_development_dependency 'rr'
 end
