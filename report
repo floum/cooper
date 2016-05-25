@@ -1,0 +1,1575 @@
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:47: [BUG] Segmentation fault at 0x00000000000008
+ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+
+-- Control frame information -----------------------------------------------
+c:0090 p:---- s:0377 e:000376 CFUNC  :put_byte
+c:0089 p:0014 s:0373 e:000372 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:47 [FINISH]
+c:0088 p:---- s:0369 e:000368 IFUNC 
+c:0087 p:---- s:0367 e:000366 CFUNC  :each
+c:0086 p:---- s:0365 e:000364 CFUNC  :each_with_index
+c:0085 p:0051 s:0362 e:000361 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46
+c:0084 p:0041 s:0356 e:000355 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:46 [FINISH]
+c:0083 p:---- s:0352 e:000351 CFUNC  :each
+c:0082 p:0051 s:0349 e:000348 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43
+c:0081 p:0039 s:0343 e:000342 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:49 [FINISH]
+c:0080 p:---- s:0339 e:000338 IFUNC 
+c:0079 p:---- s:0337 e:000336 CFUNC  :each
+c:0078 p:---- s:0335 e:000334 CFUNC  :each_with_index
+c:0077 p:0051 s:0332 e:000331 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46
+c:0076 p:0041 s:0326 e:000325 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:46 [FINISH]
+c:0075 p:---- s:0322 e:000321 CFUNC  :each
+c:0074 p:0051 s:0319 e:000318 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43
+c:0073 p:0023 s:0313 e:000312 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/serializers.rb:163
+c:0072 p:0072 s:0306 e:000305 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:202 [FINISH]
+c:0071 p:---- s:0302 e:000301 CFUNC  :each
+c:0070 p:0015 s:0299 e:000298 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:190
+c:0069 p:0047 s:0294 e:000293 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:100
+c:0068 p:0015 s:0288 e:000287 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:172 [FINISH]
+c:0067 p:---- s:0285 e:000284 CFUNC  :each
+c:0066 p:0029 s:0282 e:000281 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:171
+c:0065 p:0010 s:0276 e:000275 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:157
+c:0064 p:0010 s:0272 e:000271 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:104
+c:0063 p:0101 s:0269 e:000268 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/publishable.rb:47
+c:0062 p:0050 s:0256 e:000255 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:103
+c:0061 p:0019 s:0251 e:000250 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/writable.rb:38
+c:0060 p:0018 s:0248 e:000247 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection_pool.rb:108
+c:0059 p:0017 s:0244 e:000243 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/context.rb:63
+c:0058 p:0010 s:0240 E:000068 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/writable.rb:37
+c:0057 p:0049 s:0236 e:000234 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/insert.rb:55
+c:0056 p:0022 s:0230 e:000229 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/write_command_enabled.rb:38
+c:0055 p:0074 s:0226 e:000225 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection.rb:346 [FINISH]
+c:0054 p:0011 s:0224 e:000223 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/retryable.rb:89
+c:0053 p:0013 s:0219 E:000e80 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection.rb:337
+c:0052 p:0025 s:0214 e:000213 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/query_cache.rb:168
+c:0051 p:0015 s:0210 e:000209 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:79
+c:0050 p:0024 s:0207 e:000206 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:27
+c:0049 p:0007 s:0205 e:000204 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:118
+c:0048 p:0021 s:0203 e:000202 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:88
+c:0047 p:0015 s:0196 e:000195 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778
+c:0046 p:0020 s:0192 e:000191 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81
+c:0045 p:0039 s:0187 e:000186 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/interceptable.rb:138
+c:0044 p:0011 s:0181 E:001990 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:117
+c:0043 p:0021 s:0179 e:000178 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:88
+c:0042 p:0015 s:0172 e:000171 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778
+c:0041 p:0020 s:0168 e:000167 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81
+c:0040 p:0039 s:0163 e:000162 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/interceptable.rb:138
+c:0039 p:0050 s:0157 E:000fd0 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:116
+c:0038 p:0015 s:0152 E:001488 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:23
+c:0037 p:0022 s:0148 e:000147 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/savable.rb:23
+c:0036 p:0024 s:0144 e:000143 METHOD /home/vagrant/cooper/lib/cooper/document.rb:15
+c:0035 p:0012 s:0141 e:000139 BLOCK  /home/vagrant/cooper/spec/features/revisioning_spec.rb:14 [FINISH]
+c:0034 p:---- s:0138 e:000137 CFUNC  :instance_exec
+c:0033 p:0024 s:0134 e:000133 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:236
+c:0032 p:0006 s:0131 e:000130 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:478
+c:0031 p:0006 s:0129 e:000128 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:435
+c:0030 p:0006 s:0127 e:000126 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:478
+c:0029 p:0034 s:0125 E:0012f8 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:616
+c:0028 p:0123 s:0119 E:001288 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:478
+c:0027 p:0017 s:0113 E:001da8 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:435
+c:0026 p:0032 s:0109 E:001d48 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:478
+c:0025 p:0158 s:0105 E:001cd8 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:233
+c:0024 p:0061 s:0099 e:000098 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:581 [FINISH]
+c:0023 p:---- s:0094 e:000093 CFUNC  :map
+c:0022 p:0019 s:0091 e:000090 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:577
+c:0021 p:0087 s:0087 e:000086 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:543
+c:0020 p:0011 s:0079 e:000078 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544 [FINISH]
+c:0019 p:---- s:0076 e:000075 CFUNC  :map
+c:0018 p:0106 s:0073 e:000072 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544
+c:0017 p:0011 s:0065 e:000064 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544 [FINISH]
+c:0016 p:---- s:0062 e:000061 CFUNC  :map
+c:0015 p:0106 s:0059 e:000058 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544
+c:0014 p:0012 s:0051 e:000050 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:119 [FINISH]
+c:0013 p:---- s:0048 e:000047 CFUNC  :map
+c:0012 p:0011 s:0045 e:000044 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:119
+c:0011 p:0049 s:0043 e:000042 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/configuration.rb:1680
+c:0010 p:0011 s:0039 e:000038 BLOCK  /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:118
+c:0009 p:0018 s:0036 e:000035 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/reporter.rb:77
+c:0008 p:0022 s:0032 e:000031 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:117
+c:0007 p:0025 s:0028 e:000027 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:93
+c:0006 p:0106 s:0023 e:000022 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:78
+c:0005 p:0026 s:0016 e:000015 METHOD /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:45
+c:0004 p:0025 s:0012 e:000011 TOP    /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/exe/rspec:4 [FINISH]
+c:0003 p:---- s:0010 e:000009 CFUNC  :load
+c:0002 p:0147 s:0006 E:0020a0 EVAL   /home/vagrant/.rbenv/versions/2.3.1/bin/rspec:23 [FINISH]
+c:0001 p:0000 s:0002 E:0026b0 (none) [FINISH]
+
+-- Ruby level backtrace information ----------------------------------------
+/home/vagrant/.rbenv/versions/2.3.1/bin/rspec:23:in `<main>'
+/home/vagrant/.rbenv/versions/2.3.1/bin/rspec:23:in `load'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/exe/rspec:4:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:45:in `invoke'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:78:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:93:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:117:in `run_specs'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/reporter.rb:77:in `report'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:118:in `block in run_specs'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:119:in `map'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `map'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `block in run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `map'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:544:in `block in run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:543:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:577:in `run_examples'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:577:in `map'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb:581:in `block in run_examples'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:233:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:478:in `run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:616:in `run_around_example_hooks_for'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb:478:in `block in run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:236:in `block in run'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb:236:in `instance_exec'
+/home/vagrant/cooper/spec/features/revisioning_spec.rb:14:in `block (4 levels) in <top (required)>'
+/home/vagrant/cooper/lib/cooper/document.rb:15:in `save'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/savable.rb:23:in `save'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:23:in `insert'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:116:in `prepare_insert'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/interceptable.rb:138:in `run_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:117:in `block in prepare_insert'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/interceptable.rb:138:in `run_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:118:in `block (2 levels) in prepare_insert'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:27:in `block in insert'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb:79:in `insert_as_root'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/query_cache.rb:168:in `insert_one_with_clear_cache'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection.rb:337:in `insert_one'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/retryable.rb:89:in `write_with_retry'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection.rb:346:in `block in insert_one'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/write_command_enabled.rb:38:in `execute'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/insert.rb:55:in `execute_write_command'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/writable.rb:37:in `execute'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/context.rb:63:in `with_connection'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection_pool.rb:108:in `with_connection'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/writable.rb:38:in `block in execute'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:103:in `dispatch'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/publishable.rb:47:in `publish_command'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:104:in `block in dispatch'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:157:in `deliver'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:171:in `write'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:171:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb:172:in `block in write'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:100:in `serialize'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:190:in `serialize_fields'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:190:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb:202:in `block in serialize_fields'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/serializers.rb:163:in `serialize'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43:in `to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:46:in `block in to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `each_with_index'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:49:in `block in to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43:in `to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:43:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb:46:in `block in to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `each_with_index'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:46:in `each'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:47:in `block in to_bson'
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb:47:in `put_byte'
+
+-- Machine register context ------------------------------------------------
+ RIP: 0x00007fc9e0b835a4 RBP: 0x00007fc9e835bc90 RSP: 0x00007ffeaf52d260
+ RAX: 0x0000000000000000 RBX: 0x00007fc9e67f45d0 RCX: 0x00007fc9e4b3dbc0
+ RDX: 0x00007fc9e0b83580 RDI: 0x00007fc9e835bc90 RSI: 0x0000000000000008
+  R8: 0x00007fc9e7999a48  R9: 0x0000000000000001 R10: 0x0000000000000001
+ R11: 0x0000000000000003 R12: 0x00007fc9e7b4f640 R13: 0x0000000000000018
+ R14: 0x00007fc9e7689f08 R15: 0x00007fc9e835bc90 EFL: 0x0000000000010206
+
+-- C level backtrace information -------------------------------------------
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_vm_bugreport+0x550) [0x7fc9e5ece390] vm_dump.c:688
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_bug_context+0xd0) [0x7fc9e5ea74a0] error.c:435
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(sigsegv+0x3e) [0x7fc9e5dafc6e] signal.c:890
+/lib/x86_64-linux-gnu/libpthread.so.0 [0x7fc9e589d0a0]
+/home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so(rb_bson_byte_buffer_put_byte+0x24) [0x7fc9e0b835a4] native.c:307
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xe25) [0x7fc9e5e30885] insns.def:995
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield_values+0xbd) [0x7fc9e5e3de2d] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield_with_cfunc+0x129) [0x7fc9e5e2c289] vm_insnhelper.c:2334
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x119) [0x7fc9e5e35ab9] vm.c:979
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_each+0x3d) [0x7fc9e5e5b00d] array.c:1815
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call0_body+0x385) [0x7fc9e5e373b5] vm_eval.c:131
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_call0+0xf3) [0x7fc9e5e38e03] vm_eval.c:61
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_iterate0+0xe0) [0x7fc9e5e2bbd0] vm_eval.c:1171
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_block_call+0x6a) [0x7fc9e5e2bdea] vm_eval.c:1203
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(enum_each_with_index+0x53) [0x7fc9e5e9ba43] enum.c:2081
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield_values+0xbd) [0x7fc9e5e3de2d] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(each_pair_i_fast+0x16) [0x7fc9e5d1b9d6] hash.c:1736
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(hash_foreach_iter+0x49) [0x7fc9e5d1c079] hash.c:312
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(st_foreach_check+0xa5) [0x7fc9e5dbb185] st.c:905
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(hash_foreach_call+0x1f) [0x7fc9e5d1c40f] hash.c:351
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ensure+0xd0) [0x7fc9e5cf8d20] eval.c:901
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_hash_each_pair+0x5c) [0x7fc9e5d2064c] hash.c:368
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield_values+0xbd) [0x7fc9e5e3de2d] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield_with_cfunc+0x129) [0x7fc9e5e2c289] vm_insnhelper.c:2334
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x119) [0x7fc9e5e35ab9] vm.c:979
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_each+0x3d) [0x7fc9e5e5b00d] array.c:1815
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call0_body+0x385) [0x7fc9e5e373b5] vm_eval.c:131
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_call0+0xf3) [0x7fc9e5e38e03] vm_eval.c:61
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_iterate0+0xe0) [0x7fc9e5e2bbd0] vm_eval.c:1171
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_block_call+0x6a) [0x7fc9e5e2bdea] vm_eval.c:1203
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(enum_each_with_index+0x53) [0x7fc9e5e9ba43] enum.c:2081
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield_values+0xbd) [0x7fc9e5e3de2d] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(each_pair_i_fast+0x16) [0x7fc9e5d1b9d6] hash.c:1736
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(hash_foreach_iter+0x49) [0x7fc9e5d1c079] hash.c:312
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(st_foreach_check+0xa5) [0x7fc9e5dbb185] st.c:905
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(hash_foreach_call+0x1f) [0x7fc9e5d1c40f] hash.c:351
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ensure+0xd0) [0x7fc9e5cf8d20] eval.c:901
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_hash_each_pair+0x5c) [0x7fc9e5d2064c] hash.c:368
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_each+0x3d) [0x7fc9e5e5b00d] array.c:1815
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_each+0x3d) [0x7fc9e5e5b00d] array.c:1815
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_invoke_proc+0xd6) [0x7fc9e5e35d36] vm.c:996
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_opt_call+0xb5) [0x7fc9e5e36015] vm.c:1072
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xe25) [0x7fc9e5e30885] insns.def:995
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(yield_under+0x105) [0x7fc9e5e3e325] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_collect+0x89) [0x7fc9e5e62409] array.c:2733
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_collect+0x89) [0x7fc9e5e62409] array.c:2733
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_collect+0x89) [0x7fc9e5e62409] array.c:2733
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(invoke_block_from_c_0+0x297) [0x7fc9e5e35c37] vm.c:921
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_yield+0x4f) [0x7fc9e5e3dc0f] vm.c:988
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_yield+0x25) [0x7fc9e5e3dd45] vm_eval.c:1010
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_ary_collect+0x89) [0x7fc9e5e62409] array.c:2733
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xd5e) [0x7fc9e5e307be] insns.def:964
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_load_internal0+0xcf) [0x7fc9e5cf986f] load.c:619
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(rb_f_load+0x86) [0x7fc9e5cfa696] load.c:649
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_cfunc+0x102) [0x7fc9e5e297a2] vm_insnhelper.c:1638
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_call_method+0xab) [0x7fc9e5e3665b] vm_insnhelper.c:2175
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec_core+0xe25) [0x7fc9e5e30885] insns.def:995
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(vm_exec+0x7e) [0x7fc9e5e3518e] vm.c:1650
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(ruby_exec_internal+0xdf) [0x7fc9e5cf485f] eval.c:245
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(ruby_run_node+0x47) [0x7fc9e5cf7f37] eval.c:310
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby(main+0x4b) [0x7fc9e5cf3fcb] parse.y:5581
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /home/vagrant/.rbenv/versions/2.3.1/bin/rspec
+
+* Loaded features:
+
+    0 enumerator.so
+    1 thread.rb
+    2 rational.so
+    3 complex.so
+    4 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/encdb.so
+    5 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/trans/transdb.so
+    6 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/unicode_normalize.rb
+    7 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/rbconfig.rb
+    8 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/compatibility.rb
+    9 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/defaults.rb
+   10 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/deprecate.rb
+   11 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/errors.rb
+   12 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/version.rb
+   13 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/requirement.rb
+   14 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/platform.rb
+   15 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/basic_specification.rb
+   16 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/stub_specification.rb
+   17 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/util/list.rb
+   18 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/stringio.so
+   19 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/specification.rb
+   20 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/exceptions.rb
+   21 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_gem.rb
+   22 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb
+   23 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb
+   24 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems.rb
+   25 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/path_support.rb
+   26 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/dependency.rb
+   27 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/version.rb
+   28 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb
+   29 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/levenshtein.rb
+   30 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/jaro_winkler.rb
+   31 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkable.rb
+   32 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/delegate.rb
+   33 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb
+   34 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb
+   35 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkers/name_error_checkers.rb
+   36 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkers/method_name_checker.rb
+   37 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/spell_checkers/null_checker.rb
+   38 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean/formatter.rb
+   39 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib/did_you_mean.rb
+   40 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/version.rb
+   41 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/comparable_version.rb
+   42 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/ruby_features.rb
+   43 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support.rb
+   44 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/caller_filter.rb
+   45 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/version.rb
+   46 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/warnings.rb
+   47 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/warnings.rb
+   48 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/set.rb
+   49 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/flat_map.rb
+   50 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/filter_manager.rb
+   51 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/dsl.rb
+   52 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/source/location.rb
+   53 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/source/node.rb
+   54 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/source/syntax_highlighter.rb
+   55 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/source/token.rb
+   56 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/source.rb
+   57 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/snippet_extractor.rb
+   58 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/encoded_string.rb
+   59 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/exception_presenter.rb
+   60 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/shellwords.rb
+   61 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/shell_escape.rb
+   62 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/helpers.rb
+   63 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/notifications.rb
+   64 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/reporter.rb
+   65 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/hooks.rb
+   66 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/reentrant_mutex.rb
+   67 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/memoized_helpers.rb
+   68 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/metadata.rb
+   69 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/metadata_filter.rb
+   70 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/pending.rb
+   71 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/directory_maker.rb
+   72 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters.rb
+   73 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/ordering.rb
+   74 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/world.rb
+   75 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/backtrace_formatter.rb
+   76 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/ruby_project.rb
+   77 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/deprecation_formatter.rb
+   78 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/configuration.rb
+   79 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/optparse.rb
+   80 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/option_parser.rb
+   81 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/cgi/escape.so
+   82 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/cgi/util.rb
+   83 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/strscan.so
+   84 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/erb.rb
+   85 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/configuration_options.rb
+   86 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/runner.rb
+   87 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb
+   88 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/shared_example_group.rb
+   89 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/recursive_const_methods.rb
+   90 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example_group.rb
+   91 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core.rb
+   92 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter.rb
+   93 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/calculate_blob.rb
+   94 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/version.rb
+   95 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/json/version.rb
+   96 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/ostruct.rb
+   97 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/json/generic_object.rb
+   98 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/json/common.rb
+   99 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16be.so
+  100 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16le.so
+  101 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32be.so
+  102 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32le.so
+  103 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/parser.so
+  104 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/generator.so
+  105 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/json/ext.rb
+  106 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/json.rb
+  107 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/rfc2396_parser.rb
+  108 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/rfc3986_parser.rb
+  109 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/common.rb
+  110 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/generic.rb
+  111 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/ftp.rb
+  112 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/http.rb
+  113 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/https.rb
+  114 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/ldap.rb
+  115 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/ldaps.rb
+  116 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri/mailto.rb
+  117 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/uri.rb
+  118 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/socket.so
+  119 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/wait.so
+  120 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/socket.rb
+  121 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb
+  122 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/protocol.rb
+  123 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/zlib.so
+  124 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/exceptions.rb
+  125 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/header.rb
+  126 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/windows_31j.so
+  127 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/generic_request.rb
+  128 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/request.rb
+  129 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/requests.rb
+  130 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/response.rb
+  131 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/responses.rb
+  132 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/proxy_delta.rb
+  133 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http/backward.rb
+  134 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb
+  135 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest.so
+  136 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/digest.rb
+  137 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/openssl.so
+  138 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/bn.rb
+  139 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/pkey.rb
+  140 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/cipher.rb
+  141 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/config.rb
+  142 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/digest.rb
+  143 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/x509.rb
+  144 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/buffering.rb
+  145 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/nonblock.so
+  146 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl/ssl.rb
+  147 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/openssl.rb
+  148 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/https.rb
+  149 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/client.rb
+  150 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/etc.so
+  151 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb
+  152 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/tmpdir.rb
+  153 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/securerandom.rb
+  154 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/sha1.so
+  155 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/docile-1.1.5/lib/docile/version.rb
+  156 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/docile-1.1.5/lib/docile/execution.rb
+  157 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/set.rb
+  158 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/docile-1.1.5/lib/docile/fallback_context_proxy.rb
+  159 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/docile-1.1.5/lib/docile/chaining_fallback_context_proxy.rb
+  160 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/docile-1.1.5/lib/docile.rb
+  161 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/formatter/multi_formatter.rb
+  162 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/configuration.rb
+  163 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/exit_codes.rb
+  164 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/profiles.rb
+  165 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/source_file.rb
+  166 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/file_list.rb
+  167 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/forwardable.rb
+  168 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/result.rb
+  169 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/filter.rb
+  170 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/formatter/simple_formatter.rb
+  171 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/formatter.rb
+  172 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/last_run.rb
+  173 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/merge_helpers.rb
+  174 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/result_merger.rb
+  175 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/command_guesser.rb
+  176 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/version.rb
+  177 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/cgi/core.rb
+  178 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/cgi/cookie.rb
+  179 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/cgi.rb
+  180 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/date_core.so
+  181 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/date.rb
+  182 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/time.rb
+  183 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-html-0.10.0/lib/simplecov-html/version.rb
+  184 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-html-0.10.0/lib/simplecov-html.rb
+  185 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/pathname.so
+  186 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/pathname.rb
+  187 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/coverage.so
+  188 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/jruby_fix.rb
+  189 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov/defaults.rb
+  190 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/simplecov-0.11.2/lib/simplecov.rb
+  191 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/exception_message.rb
+  192 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/payload_validator.rb
+  193 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/formatter.rb
+  194 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/logger.rb
+  195 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/configuration.rb
+  196 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/git.rb
+  197 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/code_climate/test_reporter/ci.rb
+  198 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/codeclimate-test-reporter-0.5.0/lib/codeclimate-test-reporter.rb
+  199 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/concern.rb
+  200 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/support/ruby_version.rb
+  201 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe/version.rb
+  202 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe/synchronized_delegator.rb
+  203 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe.rb
+  204 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/prepend_and_append.rb
+  205 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/deep_merge.rb
+  206 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/except.rb
+  207 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/slice.rb
+  208 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib/i18n/version.rb
+  209 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib/i18n/exceptions.rb
+  210 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib/i18n/interpolate/ruby.rb
+  211 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib/i18n.rb
+  212 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/lazy_load_hooks.rb
+  213 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib/i18n/config.rb
+  214 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/i18n.rb
+  215 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe/non_concurrent_cache_backend.rb
+  216 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe/mri_cache_backend.rb
+  217 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib/thread_safe/cache.rb
+  218 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/inflector/inflections.rb
+  219 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/inflections.rb
+  220 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/inflector/methods.rb
+  221 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies/autoload.rb
+  222 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/gem_version.rb
+  223 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/version.rb
+  224 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/extract_options.rb
+  225 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/attribute_accessors.rb
+  226 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/logger_silence.rb
+  227 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/logger.rb
+  228 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support.rb
+  229 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/thread.rb
+  230 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/compact.rb
+  231 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/base64.rb
+  232 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/bigdecimal.so
+  233 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/delegation.rb
+  234 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/multibyte.rb
+  235 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/multibyte.rb
+  236 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/inflector/transliterate.rb
+  237 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/inflections.rb
+  238 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_time/calculations.rb
+  239 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/tempfile.rb
+  240 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/singleton.rb
+  241 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/kernel/singleton_class.rb
+  242 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation/instance_delegator.rb
+  243 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/notifications/instrumenter.rb
+  244 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/mutex_m.rb
+  245 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/notifications/fanout.rb
+  246 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/per_thread_registry.rb
+  247 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/notifications.rb
+  248 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation/behaviors.rb
+  249 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation/reporting.rb
+  250 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/aliasing.rb
+  251 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation/method_wrappers.rb
+  252 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation/proxy_wrappers.rb
+  253 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/deprecation.rb
+  254 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/deprecation.rb
+  255 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/kernel/reporting.rb
+  256 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/blank.rb
+  257 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/xml_mini/rexml.rb
+  258 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/xml_mini.rb
+  259 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/acts_like.rb
+  260 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time/acts_like.rb
+  261 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/keys.rb
+  262 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/to_query.rb
+  263 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/to_param.rb
+  264 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/conversions.rb
+  265 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/duration.rb
+  266 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/ruby_core_support.rb
+  267 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/offset_rationals.rb
+  268 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/time_or_datetime.rb
+  269 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_definition.rb
+  270 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_offset.rb
+  271 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition.rb
+  272 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition_definition.rb
+  273 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_index_definition.rb
+  274 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_info.rb
+  275 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone_info.rb
+  276 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone_info.rb
+  277 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/transition_data_timezone_info.rb
+  278 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_timezone_info.rb
+  279 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/data_source.rb
+  280 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/ruby_data_source.rb
+  281 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_data_source.rb
+  282 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_period.rb
+  283 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone.rb
+  284 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/info_timezone.rb
+  285 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone.rb
+  286 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone.rb
+  287 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/timezone_proxy.rb
+  288 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/country_index_definition.rb
+  289 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/country_info.rb
+  290 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/ruby_country_info.rb
+  291 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_country_info.rb
+  292 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/country.rb
+  293 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo/country_timezone.rb
+  294 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib/tzinfo.rb
+  295 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/try.rb
+  296 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/values/time_zone.rb
+  297 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time/conversions.rb
+  298 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/time_with_zone.rb
+  299 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_and_time/zones.rb
+  300 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time/zones.rb
+  301 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_and_time/calculations.rb
+  302 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date/zones.rb
+  303 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date/calculations.rb
+  304 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time/calculations.rb
+  305 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time/marshal.rb
+  306 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/time.rb
+  307 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date/acts_like.rb
+  308 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/remove_method.rb
+  309 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date/conversions.rb
+  310 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date.rb
+  311 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_time/acts_like.rb
+  312 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_time/conversions.rb
+  313 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_time/zones.rb
+  314 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/date_time.rb
+  315 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/time.rb
+  316 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/integer/time.rb
+  317 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/conversions.rb
+  318 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/zones.rb
+  319 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/time.rb
+  320 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/wrap.rb
+  321 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/reverse_merge.rb
+  322 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/conversions.rb
+  323 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/hash_with_indifferent_access.rb
+  324 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/indifferent_access.rb
+  325 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash/transform_values.rb
+  326 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/hash.rb
+  327 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb
+  328 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/benchmark.rb
+  329 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/name_error.rb
+  330 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/inflector.rb
+  331 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/introspection.rb
+  332 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/anonymous.rb
+  333 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/reachable.rb
+  334 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/attr_internal.rb
+  335 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/concerning.rb
+  336 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module/qualified_const.rb
+  337 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/module.rb
+  338 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/marshal.rb
+  339 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/regexp.rb
+  340 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/access.rb
+  341 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array/grouping.rb
+  342 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/array.rb
+  343 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/class/attribute.rb
+  344 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/class/delegating_attributes.rb
+  345 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/class/subclasses.rb
+  346 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/class.rb
+  347 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/struct.rb
+  348 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/enumerable.rb
+  349 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/file/atomic.rb
+  350 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/file.rb
+  351 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/bigdecimal/util.rb
+  352 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/big_decimal/conversions.rb
+  353 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/big_decimal.rb
+  354 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/range/conversions.rb
+  355 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/range/include_range.rb
+  356 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/range/overlaps.rb
+  357 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/range/each.rb
+  358 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/range.rb
+  359 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/filters.rb
+  360 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/starts_ends_with.rb
+  361 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/access.rb
+  362 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/behavior.rb
+  363 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/output_safety.rb
+  364 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/exclude.rb
+  365 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/strip.rb
+  366 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/string_inquirer.rb
+  367 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/inquiry.rb
+  368 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string/indent.rb
+  369 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/string.rb
+  370 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/duplicable.rb
+  371 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/deep_dup.rb
+  372 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/itself.rb
+  373 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/inclusion.rb
+  374 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/conversions.rb
+  375 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/instance_variables.rb
+  376 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/json.rb
+  377 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/option_merger.rb
+  378 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object/with_options.rb
+  379 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/object.rb
+  380 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/uri.rb
+  381 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/bytes.rb
+  382 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/number_helper.rb
+  383 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric/conversions.rb
+  384 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/numeric.rb
+  385 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/integer/multiple.rb
+  386 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/integer/inflections.rb
+  387 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/integer.rb
+  388 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/kernel/agnostics.rb
+  389 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/kernel/concern.rb
+  390 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/kernel.rb
+  391 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext/load_error.rb
+  392 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/core_ext.rb
+  393 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/json/decoding.rb
+  394 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/json/encoding.rb
+  395 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/json.rb
+  396 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/rails.rb
+  397 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/gem_version.rb
+  398 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/version.rb
+  399 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model.rb
+  400 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/forwardable.rb
+  401 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/time_with_zone.rb
+  402 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/object.rb
+  403 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/array.rb
+  404 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/big_decimal.rb
+  405 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/boolean.rb
+  406 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/date.rb
+  407 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/date_time.rb
+  408 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/hash.rb
+  409 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/nil_class.rb
+  410 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/numeric.rb
+  411 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/range.rb
+  412 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/regexp.rb
+  413 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/set.rb
+  414 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/string.rb
+  415 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/symbol.rb
+  416 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions/time.rb
+  417 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/extensions.rb
+  418 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/key.rb
+  419 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/macroable.rb
+  420 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/mergeable.rb
+  421 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/smash.rb
+  422 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/aggregable.rb
+  423 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/pipeline.rb
+  424 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/optional.rb
+  425 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/options.rb
+  426 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/selectable.rb
+  427 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/selector.rb
+  428 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/queryable.rb
+  429 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin/version.rb
+  430 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/origin-2.2.0/lib/origin.rb
+  431 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/environment.rb
+  432 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/config.rb
+  433 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/registry.rb
+  434 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/specialized.rb
+  435 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/json.rb
+  436 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/int32.rb
+  437 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/int64.rb
+  438 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/integer.rb
+  439 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/array.rb
+  440 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/binary.rb
+  441 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/boolean.rb
+  442 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/code.rb
+  443 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/code_with_scope.rb
+  444 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/date.rb
+  445 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/date_time.rb
+  446 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/exception.rb
+  447 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/syntax_error.rb
+  448 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/psych.so
+  449 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/omap.rb
+  450 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/set.rb
+  451 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/class_loader.rb
+  452 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/scalar_scanner.rb
+  453 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/node.rb
+  454 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/stream.rb
+  455 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/document.rb
+  456 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/sequence.rb
+  457 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/scalar.rb
+  458 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/mapping.rb
+  459 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes/alias.rb
+  460 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/nodes.rb
+  461 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/streaming.rb
+  462 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/visitor.rb
+  463 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/to_ruby.rb
+  464 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/emitter.rb
+  465 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/handler.rb
+  466 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/tree_builder.rb
+  467 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/yaml_tree.rb
+  468 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/json/ruby_events.rb
+  469 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/json_tree.rb
+  470 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors/depth_first.rb
+  471 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/visitors.rb
+  472 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/parser.rb
+  473 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/coder.rb
+  474 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/core_ext.rb
+  475 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/deprecated.rb
+  476 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/stream.rb
+  477 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/json/yaml_events.rb
+  478 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/json/tree_builder.rb
+  479 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/json/stream.rb
+  480 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych/handlers/document_stream.rb
+  481 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/psych.rb
+  482 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/yaml.rb
+  483 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/document.rb
+  484 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/false_class.rb
+  485 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/float.rb
+  486 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/hash.rb
+  487 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/max_key.rb
+  488 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/min_key.rb
+  489 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/nil_class.rb
+  490 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/object.rb
+  491 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/md5.so
+  492 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/object_id.rb
+  493 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/regexp.rb
+  494 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/string.rb
+  495 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/symbol.rb
+  496 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/time.rb
+  497 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/timestamp.rb
+  498 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/true_class.rb
+  499 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/undefined.rb
+  500 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson/version.rb
+  501 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so
+  502 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/bson.rb
+  503 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bson.rb
+  504 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/options/mapper.rb
+  505 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/options/redacted.rb
+  506 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/options.rb
+  507 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/loggable.rb
+  508 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/event/secure.rb
+  509 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/event/command_started.rb
+  510 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/event/command_succeeded.rb
+  511 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/event/command_failed.rb
+  512 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/event.rb
+  513 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/publishable.rb
+  514 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring/command_log_subscriber.rb
+  515 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/monitoring.rb
+  516 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/logger.rb
+  517 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/retryable.rb
+  518 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/result.rb
+  519 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/executable.rb
+  520 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/specifiable.rb
+  521 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/limited.rb
+  522 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/object_id_generator.rb
+  523 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/read_preference.rb
+  524 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/read/query/result.rb
+  525 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/read/query.rb
+  526 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/read/get_more.rb
+  527 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/read.rb
+  528 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/write_command_enabled.rb
+  529 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/idable.rb
+  530 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/gle.rb
+  531 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/mergable.rb
+  532 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/legacy_mergable.rb
+  533 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/bulkable.rb
+  534 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/delete/result.rb
+  535 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/delete.rb
+  536 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/insert/result.rb
+  537 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/insert.rb
+  538 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/update/result.rb
+  539 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk/update.rb
+  540 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/bulk.rb
+  541 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/delete/result.rb
+  542 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/delete.rb
+  543 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/insert/result.rb
+  544 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/insert.rb
+  545 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/update/result.rb
+  546 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/update.rb
+  547 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/create_index.rb
+  548 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/drop_index.rb
+  549 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/create_user.rb
+  550 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/update_user.rb
+  551 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/remove_user.rb
+  552 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/writable.rb
+  553 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/delete.rb
+  554 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/insert.rb
+  555 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/update.rb
+  556 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/drop_index.rb
+  557 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/create_index.rb
+  558 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/create_user.rb
+  559 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/update_user.rb
+  560 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command/remove_user.rb
+  561 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write/command.rb
+  562 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/write.rb
+  563 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/command.rb
+  564 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/find/result.rb
+  565 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/find.rb
+  566 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/get_more/result.rb
+  567 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/get_more.rb
+  568 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/parallel_scan/result.rb
+  569 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/parallel_scan.rb
+  570 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/aggregate/result.rb
+  571 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/aggregate.rb
+  572 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/map_reduce/result.rb
+  573 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/map_reduce.rb
+  574 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/collections_info/result.rb
+  575 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/collections_info.rb
+  576 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/indexes.rb
+  577 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/list_collections/result.rb
+  578 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/list_collections.rb
+  579 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/list_indexes/result.rb
+  580 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/list_indexes.rb
+  581 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/user_query.rb
+  582 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/users_info/result.rb
+  583 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands/users_info.rb
+  584 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/commands.rb
+  585 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation/kill_cursors.rb
+  586 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/operation.rb
+  587 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/parser.rb
+  588 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/bulk_write_error.rb
+  589 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/closed_stream.rb
+  590 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/extra_file_chunk.rb
+  591 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/file_not_found.rb
+  592 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/operation_failure.rb
+  593 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_bulk_operation.rb
+  594 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_bulk_operation_type.rb
+  595 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_collection_name.rb
+  596 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_database_name.rb
+  597 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_document.rb
+  598 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_file.rb
+  599 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_file_revision.rb
+  600 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_nonce.rb
+  601 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_replacement_document.rb
+  602 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_server_preference.rb
+  603 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_signature.rb
+  604 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_update_document.rb
+  605 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_uri.rb
+  606 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/invalid_write_concern.rb
+  607 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/max_bson_size.rb
+  608 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/max_message_size.rb
+  609 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/multi_index_drop.rb
+  610 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/need_primary_server.rb
+  611 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/no_server_available.rb
+  612 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/socket_error.rb
+  613 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/socket_timeout_error.rb
+  614 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/unchangeable_collection_option.rb
+  615 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/unexpected_chunk_length.rb
+  616 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/missing_file_chunk.rb
+  617 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error/unsupported_features.rb
+  618 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/error.rb
+  619 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/listeners.rb
+  620 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/publisher.rb
+  621 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/subscriber.rb
+  622 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/primary_elected.rb
+  623 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/description_changed.rb
+  624 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event/standalone_discovered.rb
+  625 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/event.rb
+  626 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/address/ipv4.rb
+  627 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/address/ipv6.rb
+  628 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/address/unix.rb
+  629 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/address.rb
+  630 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/cr/conversation.rb
+  631 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/cr.rb
+  632 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/ldap/conversation.rb
+  633 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/ldap.rb
+  634 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/scram/conversation.rb
+  635 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/scram.rb
+  636 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/user/view.rb
+  637 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/user.rb
+  638 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/x509/conversation.rb
+  639 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/x509.rb
+  640 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth/roles.rb
+  641 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/auth.rb
+  642 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/client.rb
+  643 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster/topology/replica_set.rb
+  644 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster/topology/sharded.rb
+  645 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster/topology/single.rb
+  646 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster/topology/unknown.rb
+  647 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster/topology.rb
+  648 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cluster.rb
+  649 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/result.rb
+  650 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/transformable.rb
+  651 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/validatable.rb
+  652 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/combineable.rb
+  653 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/ordered_combiner.rb
+  654 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/unordered_combiner.rb
+  655 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write/result_combiner.rb
+  656 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/bulk_write.rb
+  657 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/aggregation.rb
+  658 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/map_reduce.rb
+  659 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/op_query.rb
+  660 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/find_command.rb
+  661 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/flags.rb
+  662 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder/modifiers.rb
+  663 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/builder.rb
+  664 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/immutable.rb
+  665 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/iterable.rb
+  666 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/explainable.rb
+  667 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/aggregation.rb
+  668 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/map_reduce.rb
+  669 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/readable.rb
+  670 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view/writable.rb
+  671 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection/view.rb
+  672 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/collection.rb
+  673 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor/builder/op_get_more.rb
+  674 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor/builder/op_kill_cursors.rb
+  675 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor/builder/get_more_command.rb
+  676 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor/builder/kill_cursors_command.rb
+  677 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor/builder.rb
+  678 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/cursor.rb
+  679 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/database/view.rb
+  680 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/database.rb
+  681 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/dbref.rb
+  682 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/file/chunk.rb
+  683 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/file/info.rb
+  684 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/file.rb
+  685 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/fs_bucket.rb
+  686 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/stream/read.rb
+  687 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/stream/write.rb
+  688 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid/stream.rb
+  689 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/grid.rb
+  690 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/index/view.rb
+  691 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/index.rb
+  692 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/serializers.rb
+  693 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/bit_vector.rb
+  694 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/message.rb
+  695 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/delete.rb
+  696 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/get_more.rb
+  697 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/insert.rb
+  698 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/kill_cursors.rb
+  699 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/query.rb
+  700 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/update.rb
+  701 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol/reply.rb
+  702 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/protocol.rb
+  703 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connectable.rb
+  704 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection.rb
+  705 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection_pool/queue.rb
+  706 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/connection_pool.rb
+  707 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/context.rb
+  708 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description/features.rb
+  709 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description/inspector/primary_elected.rb
+  710 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description/inspector/description_changed.rb
+  711 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description/inspector/standalone_discovered.rb
+  712 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description/inspector.rb
+  713 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/description.rb
+  714 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/monitor/connection.rb
+  715 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server/monitor.rb
+  716 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server.rb
+  717 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/selectable.rb
+  718 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/nearest.rb
+  719 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/primary.rb
+  720 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/primary_preferred.rb
+  721 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/secondary.rb
+  722 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector/secondary_preferred.rb
+  723 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/server_selector.rb
+  724 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/socket/ssl.rb
+  725 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/socket/tcp.rb
+  726 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/socket/unix.rb
+  727 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/socket.rb
+  728 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/uri.rb
+  729 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/version.rb
+  730 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/write_concern/normalizable.rb
+  731 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/write_concern/acknowledged.rb
+  732 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/write_concern/unacknowledged.rb
+  733 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo/write_concern.rb
+  734 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongo-2.2.5/lib/mongo.rb
+  735 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/version.rb
+  736 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config/environment.rb
+  737 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config/options.rb
+  738 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config/validators/option.rb
+  739 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config/validators/client.rb
+  740 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config/validators.rb
+  741 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/config.rb
+  742 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/loggable.rb
+  743 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/factory.rb
+  744 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/validators/storage.rb
+  745 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/validators.rb
+  746 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/storage_options.rb
+  747 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/thread_options.rb
+  748 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients/options.rb
+  749 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/clients.rb
+  750 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/positional.rb
+  751 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/evolvable.rb
+  752 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/array.rb
+  753 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/big_decimal.rb
+  754 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/boolean.rb
+  755 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/date.rb
+  756 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/date_time.rb
+  757 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/false_class.rb
+  758 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/float.rb
+  759 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/hash.rb
+  760 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/integer.rb
+  761 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/module.rb
+  762 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/nil_class.rb
+  763 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/object.rb
+  764 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/object_id.rb
+  765 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/range.rb
+  766 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/regexp.rb
+  767 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/set.rb
+  768 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/string.rb
+  769 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/symbol.rb
+  770 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/time.rb
+  771 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/time_with_zone.rb
+  772 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions/true_class.rb
+  773 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/extensions.rb
+  774 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/mongoid_error.rb
+  775 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/ambiguous_relationship.rb
+  776 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/callback.rb
+  777 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/document_not_destroyed.rb
+  778 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/document_not_found.rb
+  779 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/eager_load.rb
+  780 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_collection.rb
+  781 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_config_option.rb
+  782 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_field.rb
+  783 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_field_option.rb
+  784 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_find.rb
+  785 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_includes.rb
+  786 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_index.rb
+  787 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_options.rb
+  788 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_path.rb
+  789 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_scope.rb
+  790 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_set_polymorphic_relation.rb
+  791 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_storage_options.rb
+  792 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_storage_parent.rb
+  793 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_time.rb
+  794 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/invalid_value.rb
+  795 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/inverse_not_found.rb
+  796 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/mixed_relations.rb
+  797 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/mixed_client_configuration.rb
+  798 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/nested_attributes_metadata_not_found.rb
+  799 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_default_client.rb
+  800 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_environment.rb
+  801 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_map_reduce_output.rb
+  802 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_metadata.rb
+  803 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_parent.rb
+  804 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_client_config.rb
+  805 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_clients_config.rb
+  806 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_client_database.rb
+  807 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/no_client_hosts.rb
+  808 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/readonly_attribute.rb
+  809 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/readonly_document.rb
+  810 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/scope_overwrite.rb
+  811 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/too_many_nested_attribute_records.rb
+  812 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/unknown_attribute.rb
+  813 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/unsaved_document.rb
+  814 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/unsupported_javascript.rb
+  815 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/validations.rb
+  816 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors/delete_restriction.rb
+  817 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/errors.rb
+  818 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/threaded/lifecycle.rb
+  819 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/threaded.rb
+  820 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/accessors.rb
+  821 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/auto_save.rb
+  822 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cascading/delete.rb
+  823 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cascading/destroy.rb
+  824 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cascading/nullify.rb
+  825 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cascading/restrict.rb
+  826 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cascading.rb
+  827 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/constraint.rb
+  828 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/conversions.rb
+  829 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/counter_cache.rb
+  830 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/cyclic.rb
+  831 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/marshalable.rb
+  832 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/proxy.rb
+  833 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/binding.rb
+  834 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/embedded/in.rb
+  835 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/embedded/many.rb
+  836 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/embedded/one.rb
+  837 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/referenced/in.rb
+  838 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/referenced/many.rb
+  839 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/referenced/many_to_many.rb
+  840 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings/referenced/one.rb
+  841 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/bindings.rb
+  842 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builder.rb
+  843 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/nested_builder.rb
+  844 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/embedded/in.rb
+  845 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/embedded/many.rb
+  846 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/embedded/one.rb
+  847 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/nested_attributes/one.rb
+  848 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/nested_attributes/many.rb
+  849 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/referenced/in.rb
+  850 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/referenced/many.rb
+  851 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/referenced/many_to_many.rb
+  852 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders/referenced/one.rb
+  853 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/builders.rb
+  854 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/many.rb
+  855 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/one.rb
+  856 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/options.rb
+  857 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/polymorphic.rb
+  858 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/targets/enumerable.rb
+  859 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/embedded/in.rb
+  860 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/embedded/batchable.rb
+  861 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/embedded/many.rb
+  862 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/embedded/one.rb
+  863 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/referenced/in.rb
+  864 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/referenced/many.rb
+  865 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/referenced/many_to_many.rb
+  866 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/referenced/one.rb
+  867 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/reflections.rb
+  868 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/synchronization.rb
+  869 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/touchable.rb
+  870 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/metadata.rb
+  871 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/macros.rb
+  872 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations.rb
+  873 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/modifiers.rb
+  874 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/paths/embedded/one.rb
+  875 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/paths/embedded/many.rb
+  876 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/paths/embedded.rb
+  877 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/paths/root.rb
+  878 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic/paths.rb
+  879 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/atomic.rb
+  880 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/attribute_methods.rb
+  881 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/attributes/dynamic.rb
+  882 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/attributes/nested.rb
+  883 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/attributes/processing.rb
+  884 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/attributes/readonly.rb
+  885 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/attributes.rb
+  886 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/queryable.rb
+  887 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/atomic.rb
+  888 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/aggregable/mongo.rb
+  889 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/command.rb
+  890 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/geo_near.rb
+  891 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/map_reduce.rb
+  892 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager/base.rb
+  893 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager/belongs_to.rb
+  894 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager/has_one.rb
+  895 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager/has_many.rb
+  896 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager/has_and_belongs_to_many.rb
+  897 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/relations/eager.rb
+  898 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/mongo.rb
+  899 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/aggregable/memory.rb
+  900 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/memory.rb
+  901 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual/none.rb
+  902 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/contextual.rb
+  903 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/copyable.rb
+  904 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/equality.rb
+  905 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/findable.rb
+  906 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/includable.rb
+  907 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/inspectable.rb
+  908 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/marshalable.rb
+  909 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/modifiable.rb
+  910 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria/scopable.rb
+  911 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/criteria.rb
+  912 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/factory.rb
+  913 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields/standard.rb
+  914 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields/foreign_key.rb
+  915 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields/localized.rb
+  916 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields/validators/macro.rb
+  917 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields/validators.rb
+  918 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/fields.rb
+  919 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/timeless.rb
+  920 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/created/short.rb
+  921 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/created.rb
+  922 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/updated/short.rb
+  923 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/updated.rb
+  924 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps/short.rb
+  925 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/timestamps.rb
+  926 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/changeable.rb
+  927 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/findable.rb
+  928 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/indexable/specification.rb
+  929 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/indexable/validators/options.rb
+  930 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/indexable.rb
+  931 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/inspectable.rb
+  932 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/interceptable.rb
+  933 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/default.rb
+  934 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/all.rb
+  935 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/and.rb
+  936 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/exists.rb
+  937 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/gt.rb
+  938 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/gte.rb
+  939 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/in.rb
+  940 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/lt.rb
+  941 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/lte.rb
+  942 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/ne.rb
+  943 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/nin.rb
+  944 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/or.rb
+  945 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable/size.rb
+  946 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/matchable.rb
+  947 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/creatable.rb
+  948 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/deletable.rb
+  949 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/destroyable.rb
+  950 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/incrementable.rb
+  951 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/logical.rb
+  952 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/poppable.rb
+  953 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/pullable.rb
+  954 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/pushable.rb
+  955 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/renamable.rb
+  956 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/savable.rb
+  957 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/settable.rb
+  958 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/updatable.rb
+  959 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/upsertable.rb
+  960 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable/unsettable.rb
+  961 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/persistable.rb
+  962 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/reloadable.rb
+  963 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/selectable.rb
+  964 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/scopable.rb
+  965 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/serializable.rb
+  966 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/shardable.rb
+  967 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/stateful.rb
+  968 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/traversable.rb
+  969 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/macros.rb
+  970 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/localizable.rb
+  971 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validator.rb
+  972 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/associated.rb
+  973 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/absence.rb
+  974 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/validates.rb
+  975 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/with.rb
+  976 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/acceptance.rb
+  977 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/presence.rb
+  978 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/format.rb
+  979 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/confirmation.rb
+  980 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/clusivity.rb
+  981 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/inclusion.rb
+  982 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/callbacks.rb
+  983 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/exclusion.rb
+  984 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/length.rb
+  985 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations/numericality.rb
+  986 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/validations.rb
+  987 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/format.rb
+  988 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/length.rb
+  989 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/queryable.rb
+  990 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/presence.rb
+  991 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable/uniqueness.rb
+  992 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/validatable.rb
+  993 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/conversion.rb
+  994 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/model.rb
+  995 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/forbidden_attributes_protection.rb
+  996 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/serialization.rb
+  997 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/serializers/json.rb
+  998 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/serializers/xml.rb
+  999 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/composable.rb
+ 1000 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/document.rb
+ 1001 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/tasks/database.rb
+ 1002 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid/query_cache.rb
+ 1003 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/mongoid-5.1.3/lib/mongoid.rb
+ 1004 /home/vagrant/cooper/lib/cooper/version.rb
+ 1005 /home/vagrant/cooper/lib/cooper/document.rb
+ 1006 /home/vagrant/cooper/lib/cooper/revision_source.rb
+ 1007 /home/vagrant/cooper/lib/cooper.rb
+ 1008 /home/vagrant/cooper/spec/spec_helper.rb
+ 1009 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/base_formatter.rb
+ 1010 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/console_codes.rb
+ 1011 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/base_text_formatter.rb
+ 1012 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/formatters/documentation_formatter.rb
+ 1013 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/instance_method_stasher.rb
+ 1014 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/method_double.rb
+ 1015 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/matcher_definition.rb
+ 1016 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/argument_matchers.rb
+ 1017 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/object_reference.rb
+ 1018 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/example_methods.rb
+ 1019 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/proxy.rb
+ 1020 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/test_double.rb
+ 1021 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/fuzzy_matcher.rb
+ 1022 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/argument_list_matcher.rb
+ 1023 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/message_expectation.rb
+ 1024 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/order_group.rb
+ 1025 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/object_formatter.rb
+ 1026 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/error_generator.rb
+ 1027 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/space.rb
+ 1028 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/mutate_const.rb
+ 1029 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/targets.rb
+ 1030 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/syntax.rb
+ 1031 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/configuration.rb
+ 1032 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-support-3.4.1/lib/rspec/support/method_signature_verifier.rb
+ 1033 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/verifying_message_expectation.rb
+ 1034 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/method_reference.rb
+ 1035 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/verifying_proxy.rb
+ 1036 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/verifying_double.rb
+ 1037 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/version.rb
+ 1038 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks.rb
+ 1039 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/mocking_adapters/rspec.rb
+ 1040 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/english_phrasing.rb
+ 1041 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/composable.rb
+ 1042 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/built_in/base_matcher.rb
+ 1043 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/built_in.rb
+ 1044 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/generated_descriptions.rb
+ 1045 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/dsl.rb
+ 1046 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/matcher_delegator.rb
+ 1047 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/aliased_matcher.rb
+ 1048 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/expecteds_for_multiple_diffs.rb
+ 1049 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers.rb
+ 1050 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/expectation_target.rb
+ 1051 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/syntax.rb
+ 1052 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/configuration.rb
+ 1053 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/fail_with.rb
+ 1054 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/handler.rb
+ 1055 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations/version.rb
+ 1056 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/expectations.rb
+ 1057 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/naming.rb
+ 1058 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/callbacks.rb
+ 1059 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/descendants_tracker.rb
+ 1060 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb
+ 1061 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/translation.rb
+ 1062 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/built_in/eq.rb
+ 1063 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/built_in/include.rb
+ 1064 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/matchers/expectation_customization.rb
+ 1065 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/matchers/receive.rb
+ 1066 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/chain.rb
+ 1067 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/error_generator.rb
+ 1068 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/stub_chain.rb
+ 1069 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/stub_chain_chain.rb
+ 1070 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/expect_chain_chain.rb
+ 1071 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/expectation_chain.rb
+ 1072 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/message_chains.rb
+ 1073 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/recorder.rb
+ 1074 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance/proxy.rb
+ 1075 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-mocks-3.4.1/lib/rspec/mocks/any_instance.rb
+ 1076 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rspec-expectations-3.4.0/lib/rspec/matchers/built_in/be.rb
+ 1077 /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activemodel-4.2.6/lib/active_model/errors.rb
+
+* Process memory map:
+
+7fc9df41d000-7fc9df5a4000 r--s 00000000 08:01 261136                     /lib/x86_64-linux-gnu/libc-2.13.so
+7fc9df5a4000-7fc9e045c000 r--s 00000000 08:01 285175                     /home/vagrant/.rbenv/versions/2.3.1/bin/ruby
+7fc9e045c000-7fc9e0471000 r-xp 00000000 08:01 261125                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc9e0471000-7fc9e0671000 ---p 00015000 08:01 261125                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc9e0671000-7fc9e0672000 rw-p 00015000 08:01 261125                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc9e0672000-7fc9e0673000 ---p 00000000 00:00 0 
+7fc9e0673000-7fc9e0773000 rw-p 00000000 00:00 0 
+7fc9e0773000-7fc9e0774000 ---p 00000000 00:00 0 
+7fc9e0774000-7fc9e0975000 rw-p 00000000 00:00 0 
+7fc9e0975000-7fc9e0980000 r-xp 00000000 08:01 261131                     /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7fc9e0980000-7fc9e0b7f000 ---p 0000b000 08:01 261131                     /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7fc9e0b7f000-7fc9e0b80000 r--p 0000a000 08:01 261131                     /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7fc9e0b80000-7fc9e0b81000 rw-p 0000b000 08:01 261131                     /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7fc9e0b81000-7fc9e0b85000 r-xp 00000000 08:01 530065                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so
+7fc9e0b85000-7fc9e0d84000 ---p 00004000 08:01 530065                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so
+7fc9e0d84000-7fc9e0d85000 rw-p 00003000 08:01 530065                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so
+7fc9e0d85000-7fc9e0d86000 r-xp 00000000 08:01 415729                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/md5.so
+7fc9e0d86000-7fc9e0f85000 ---p 00001000 08:01 415729                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/md5.so
+7fc9e0f85000-7fc9e0f86000 rw-p 00000000 08:01 415729                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/md5.so
+7fc9e0f86000-7fc9e0fac000 r-xp 00000000 08:01 415828                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/psych.so
+7fc9e0fac000-7fc9e11ac000 ---p 00026000 08:01 415828                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/psych.so
+7fc9e11ac000-7fc9e11ad000 rw-p 00026000 08:01 415828                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/psych.so
+7fc9e11ad000-7fc9e11c2000 r-xp 00000000 08:01 415804                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/bigdecimal.so
+7fc9e11c2000-7fc9e13c1000 ---p 00015000 08:01 415804                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/bigdecimal.so
+7fc9e13c1000-7fc9e13c2000 rw-p 00014000 08:01 415804                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/bigdecimal.so
+7fc9e13c2000-7fc9e13c4000 r-xp 00000000 08:01 415727                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/coverage.so
+7fc9e13c4000-7fc9e15c3000 ---p 00002000 08:01 415727                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/coverage.so
+7fc9e15c3000-7fc9e15c4000 rw-p 00001000 08:01 415727                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/coverage.so
+7fc9e15c4000-7fc9e15cb000 r-xp 00000000 08:01 415739                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/pathname.so
+7fc9e15cb000-7fc9e17ca000 ---p 00007000 08:01 415739                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/pathname.so
+7fc9e17ca000-7fc9e17cb000 rw-p 00006000 08:01 415739                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/pathname.so
+7fc9e17cb000-7fc9e17fe000 r-xp 00000000 08:01 415736                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/date_core.so
+7fc9e17fe000-7fc9e19fd000 ---p 00033000 08:01 415736                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/date_core.so
+7fc9e19fd000-7fc9e19ff000 rw-p 00032000 08:01 415736                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/date_core.so
+7fc9e19ff000-7fc9e1a01000 rw-p 00000000 00:00 0 
+7fc9e1a01000-7fc9e1a02000 r-xp 00000000 08:01 415733                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/sha1.so
+7fc9e1a02000-7fc9e1c01000 ---p 00001000 08:01 415733                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/sha1.so
+7fc9e1c01000-7fc9e1c02000 rw-p 00000000 08:01 415733                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest/sha1.so
+7fc9e1c02000-7fc9e1c08000 r-xp 00000000 08:01 415738                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/etc.so
+7fc9e1c08000-7fc9e1e07000 ---p 00006000 08:01 415738                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/etc.so
+7fc9e1e07000-7fc9e1e08000 rw-p 00005000 08:01 415738                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/etc.so
+7fc9e1e08000-7fc9e1e09000 r-xp 00000000 08:01 415811                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/nonblock.so
+7fc9e1e09000-7fc9e2009000 ---p 00001000 08:01 415811                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/nonblock.so
+7fc9e2009000-7fc9e200a000 rw-p 00001000 08:01 415811                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/nonblock.so
+7fc9e200a000-7fc9e200e000 r-xp 00000000 08:01 415807                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest.so
+7fc9e200e000-7fc9e220d000 ---p 00004000 08:01 415807                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest.so
+7fc9e220d000-7fc9e220e000 rw-p 00003000 08:01 415807                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/digest.so
+7fc9e220e000-7fc9e23d9000 r-xp 00000000 08:01 18618                      /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7fc9e23d9000-7fc9e25d9000 ---p 001cb000 08:01 18618                      /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7fc9e25d9000-7fc9e25f4000 r--p 001cb000 08:01 18618                      /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7fc9e25f4000-7fc9e2603000 rw-p 001e6000 08:01 18618                      /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7fc9e2603000-7fc9e2607000 rw-p 00000000 00:00 0 
+7fc9e2607000-7fc9e265d000 r-xp 00000000 08:01 18631                      /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0
+7fc9e265d000-7fc9e285d000 ---p 00056000 08:01 18631                      /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0
+7fc9e285d000-7fc9e2860000 r--p 00056000 08:01 18631                      /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0
+7fc9e2860000-7fc9e2866000 rw-p 00059000 08:01 18631                      /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0
+7fc9e2866000-7fc9e28b7000 r-xp 00000000 08:01 415829                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/openssl.so
+7fc9e28b7000-7fc9e2ab7000 ---p 00051000 08:01 415829                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/openssl.so
+7fc9e2ab7000-7fc9e2abb000 rw-p 00051000 08:01 415829                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/openssl.so
+7fc9e2abb000-7fc9e2abe000 r-xp 00000000 08:01 415750                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/windows_31j.so
+7fc9e2abe000-7fc9e2cbd000 ---p 00003000 08:01 415750                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/windows_31j.so
+7fc9e2cbd000-7fc9e2cbe000 rw-p 00002000 08:01 415750                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/windows_31j.so
+7fc9e2cbe000-7fc9e2cd4000 r-xp 00000000 08:01 261307                     /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fc9e2cd4000-7fc9e2ed3000 ---p 00016000 08:01 261307                     /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fc9e2ed3000-7fc9e2ed4000 r--p 00015000 08:01 261307                     /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fc9e2ed4000-7fc9e2ed5000 rw-p 00016000 08:01 261307                     /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fc9e2ed5000-7fc9e2ee4000 r-xp 00000000 08:01 415816                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/zlib.so
+7fc9e2ee4000-7fc9e30e4000 ---p 0000f000 08:01 415816                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/zlib.so
+7fc9e30e4000-7fc9e30e5000 rw-p 0000f000 08:01 415816                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/zlib.so
+7fc9e30e5000-7fc9e30e6000 r-xp 00000000 08:01 415810                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/wait.so
+7fc9e30e6000-7fc9e32e6000 ---p 00001000 08:01 415810                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/wait.so
+7fc9e32e6000-7fc9e32e7000 rw-p 00001000 08:01 415810                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/io/wait.so
+7fc9e32e7000-7fc9e3310000 r-xp 00000000 08:01 415823                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/socket.so
+7fc9e3310000-7fc9e3510000 ---p 00029000 08:01 415823                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/socket.so
+7fc9e3510000-7fc9e3511000 rw-p 00029000 08:01 415823                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/socket.so
+7fc9e3511000-7fc9e351b000 r-xp 00000000 08:01 415827                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/generator.so
+7fc9e351b000-7fc9e371a000 ---p 0000a000 08:01 415827                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/generator.so
+7fc9e371a000-7fc9e371b000 rw-p 00009000 08:01 415827                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/generator.so
+7fc9e371b000-7fc9e371c000 r-xp 00000000 08:01 415796                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32le.so
+7fc9e371c000-7fc9e391c000 ---p 00001000 08:01 415796                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32le.so
+7fc9e391c000-7fc9e391d000 rw-p 00001000 08:01 415796                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32le.so
+7fc9e391d000-7fc9e391e000 r-xp 00000000 08:01 415783                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32be.so
+7fc9e391e000-7fc9e3b1e000 ---p 00001000 08:01 415783                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32be.so
+7fc9e3b1e000-7fc9e3b1f000 rw-p 00001000 08:01 415783                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_32be.so
+7fc9e3b1f000-7fc9e3b20000 r-xp 00000000 08:01 415777                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16le.so
+7fc9e3b20000-7fc9e3d20000 ---p 00001000 08:01 415777                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16le.so
+7fc9e3d20000-7fc9e3d21000 rw-p 00001000 08:01 415777                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16le.so
+7fc9e3d21000-7fc9e3d22000 r-xp 00000000 08:01 415793                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16be.so
+7fc9e3d22000-7fc9e3f22000 ---p 00001000 08:01 415793                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16be.so
+7fc9e3f22000-7fc9e3f23000 rw-p 00001000 08:01 415793                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/utf_16be.so
+7fc9e3f23000-7fc9e3f29000 r-xp 00000000 08:01 415826                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/parser.so
+7fc9e3f29000-7fc9e4128000 ---p 00006000 08:01 415826                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/parser.so
+7fc9e4128000-7fc9e4129000 rw-p 00005000 08:01 415826                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/json/ext/parser.so
+7fc9e4129000-7fc9e412e000 r-xp 00000000 08:01 415742                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/strscan.so
+7fc9e412e000-7fc9e432d000 ---p 00005000 08:01 415742                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/strscan.so
+7fc9e432d000-7fc9e432e000 rw-p 00004000 08:01 415742                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/strscan.so
+7fc9e432e000-7fc9e4330000 r-xp 00000000 08:01 415741                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/cgi/escape.so
+7fc9e4330000-7fc9e452f000 ---p 00002000 08:01 415741                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/cgi/escape.so
+7fc9e452f000-7fc9e4530000 rw-p 00001000 08:01 415741                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/cgi/escape.so
+7fc9e4530000-7fc9e4537000 r-xp 00000000 08:01 415831                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/stringio.so
+7fc9e4537000-7fc9e4737000 ---p 00007000 08:01 415831                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/stringio.so
+7fc9e4737000-7fc9e4738000 rw-p 00007000 08:01 415831                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/stringio.so
+7fc9e4738000-7fc9e473b000 r-xp 00000000 08:01 415769                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/trans/transdb.so
+7fc9e473b000-7fc9e493a000 ---p 00003000 08:01 415769                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/trans/transdb.so
+7fc9e493a000-7fc9e493b000 rw-p 00002000 08:01 415769                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/trans/transdb.so
+7fc9e493b000-7fc9e493d000 r-xp 00000000 08:01 415787                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/encdb.so
+7fc9e493d000-7fc9e4b3c000 ---p 00002000 08:01 415787                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/encdb.so
+7fc9e4b3c000-7fc9e4b3d000 rw-p 00001000 08:01 415787                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-linux/enc/encdb.so
+7fc9e4b3d000-7fc9e4c3e000 rw-p 00000000 00:00 0 
+7fc9e4c3e000-7fc9e4dbf000 r-xp 00000000 08:01 261136                     /lib/x86_64-linux-gnu/libc-2.13.so
+7fc9e4dbf000-7fc9e4fbf000 ---p 00181000 08:01 261136                     /lib/x86_64-linux-gnu/libc-2.13.so
+7fc9e4fbf000-7fc9e4fc3000 r--p 00181000 08:01 261136                     /lib/x86_64-linux-gnu/libc-2.13.so
+7fc9e4fc3000-7fc9e4fc4000 rw-p 00185000 08:01 261136                     /lib/x86_64-linux-gnu/libc-2.13.so
+7fc9e4fc4000-7fc9e4fc9000 rw-p 00000000 00:00 0 
+7fc9e4fc9000-7fc9e504a000 r-xp 00000000 08:01 261130                     /lib/x86_64-linux-gnu/libm-2.13.so
+7fc9e504a000-7fc9e5249000 ---p 00081000 08:01 261130                     /lib/x86_64-linux-gnu/libm-2.13.so
+7fc9e5249000-7fc9e524a000 r--p 00080000 08:01 261130                     /lib/x86_64-linux-gnu/libm-2.13.so
+7fc9e524a000-7fc9e524b000 rw-p 00081000 08:01 261130                     /lib/x86_64-linux-gnu/libm-2.13.so
+7fc9e524b000-7fc9e5253000 r-xp 00000000 08:01 261143                     /lib/x86_64-linux-gnu/libcrypt-2.13.so
+7fc9e5253000-7fc9e5452000 ---p 00008000 08:01 261143                     /lib/x86_64-linux-gnu/libcrypt-2.13.so
+7fc9e5452000-7fc9e5453000 r--p 00007000 08:01 261143                     /lib/x86_64-linux-gnu/libcrypt-2.13.so
+7fc9e5453000-7fc9e5454000 rw-p 00008000 08:01 261143                     /lib/x86_64-linux-gnu/libcrypt-2.13.so
+7fc9e5454000-7fc9e5482000 rw-p 00000000 00:00 0 
+7fc9e5482000-7fc9e5484000 r-xp 00000000 08:01 261142                     /lib/x86_64-linux-gnu/libdl-2.13.so
+7fc9e5484000-7fc9e5684000 ---p 00002000 08:01 261142                     /lib/x86_64-linux-gnu/libdl-2.13.so
+7fc9e5684000-7fc9e5685000 r--p 00002000 08:01 261142                     /lib/x86_64-linux-gnu/libdl-2.13.so
+7fc9e5685000-7fc9e5686000 rw-p 00003000 08:01 261142                     /lib/x86_64-linux-gnu/libdl-2.13.so
+7fc9e5686000-7fc9e568d000 r-xp 00000000 08:01 261150                     /lib/x86_64-linux-gnu/librt-2.13.so
+7fc9e568d000-7fc9e588c000 ---p 00007000 08:01 261150                     /lib/x86_64-linux-gnu/librt-2.13.so
+7fc9e588c000-7fc9e588d000 r--p 00006000 08:01 261150                     /lib/x86_64-linux-gnu/librt-2.13.so
+7fc9e588d000-7fc9e588e000 rw-p 00007000 08:01 261150                     /lib/x86_64-linux-gnu/librt-2.13.so
+7fc9e588e000-7fc9e58a5000 r-xp 00000000 08:01 261151                     /lib/x86_64-linux-gnu/libpthread-2.13.so
+7fc9e58a5000-7fc9e5aa4000 ---p 00017000 08:01 261151                     /lib/x86_64-linux-gnu/libpthread-2.13.so
+7fc9e5aa4000-7fc9e5aa5000 r--p 00016000 08:01 261151                     /lib/x86_64-linux-gnu/libpthread-2.13.so
+7fc9e5aa5000-7fc9e5aa6000 rw-p 00017000 08:01 261151                     /lib/x86_64-linux-gnu/libpthread-2.13.so
+7fc9e5aa6000-7fc9e5aaa000 rw-p 00000000 00:00 0 
+7fc9e5aaa000-7fc9e5aca000 r-xp 00000000 08:01 261148                     /lib/x86_64-linux-gnu/ld-2.13.so
+7fc9e5ae9000-7fc9e5b1d000 r--s 00000000 08:01 530065                     /home/vagrant/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bson-4.1.1/lib/native.so
+7fc9e5b1d000-7fc9e5b3e000 r--s 00000000 08:01 261151                     /lib/x86_64-linux-gnu/libpthread-2.13.so
+7fc9e5b3e000-7fc9e5b45000 r--s 00000000 08:01 62                         /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fc9e5b45000-7fc9e5cbc000 r--p 00000000 08:01 7611                       /usr/lib/locale/locale-archive
+7fc9e5cbc000-7fc9e5cc1000 rw-p 00000000 00:00 0 
+7fc9e5cc2000-7fc9e5cc3000 rw-p 00000000 00:00 0 
+7fc9e5cc3000-7fc9e5cc4000 ---p 00000000 00:00 0 
+7fc9e5cc4000-7fc9e5cc9000 rw-p 00000000 00:00 0 
+7fc9e5cc9000-7fc9e5cca000 r--p 0001f000 08:01 261148                     /lib/x86_64-linux-gnu/ld-2.13.so
+7fc9e5cca000-7fc9e5ccb000 rw-p 00020000 08:01 261148                     /lib/x86_64-linux-gnu/ld-2.13.so
+7fc9e5ccb000-7fc9e5ccc000 rw-p 00000000 00:00 0 
+7fc9e5ccc000-7fc9e5f93000 r-xp 00000000 08:01 285175                     /home/vagrant/.rbenv/versions/2.3.1/bin/ruby
+7fc9e6192000-7fc9e6198000 rw-p 002c6000 08:01 285175                     /home/vagrant/.rbenv/versions/2.3.1/bin/ruby
+7fc9e6198000-7fc9e61aa000 rw-p 00000000 00:00 0 
+7fc9e67f3000-7fc9e8b99000 rw-p 00000000 00:00 0                          [heap]
+7ffeaed38000-7ffeaf537000 rw-p 00000000 00:00 0                          [stack]
+7ffeaf5e9000-7ffeaf5ea000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+

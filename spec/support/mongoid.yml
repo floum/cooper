@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      database: cooper_development
+      hosts:
+        - localhost:27017
