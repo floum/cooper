@@ -4,12 +4,15 @@ module Cooper
     extend ActiveSupport::Concern
     include Mongoid::Document
 
-    def save
-      revisions.push(new_revision)
+    attr_accessor :revision_source
+
+    def initialize(*)
       super
     end
 
-    def new_revision
+    def save
+      revisions.push(new_revision)
+      super
     end
 
     included do
@@ -19,17 +22,16 @@ module Cooper
     end
 
     class_methods do
-      def revision_source
-        object = Object.new
-        object.define_singleton_method(:new_revision) do |_|
-        end
-        object
-      end
-
       def revision_field(field)
         revision_fields << field
         self.field field
       end
+    end
+
+    private
+
+    def new_revision
+      revision_source.new_revision(self)
     end
   end
 end

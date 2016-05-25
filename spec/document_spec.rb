@@ -8,6 +8,14 @@ describe Cooper::Document do
       end
     end
 
+    let(:revision_source) { double.as_null_object }
+
+    let(:object) do
+      klass.new.tap do |o|
+        o.revision_source = revision_source
+      end
+    end
+
     it 'creates an array of revision_fields for the class' do
       expect(klass.revision_fields).to eq []
     end
@@ -52,21 +60,13 @@ describe Cooper::Document do
       end
 
       it 'creates a new revision' do
-        object = klass.new
-        expect(object).to receive(:new_revision)
+        expect(object.revision_source).to receive(:new_revision)
         object.save
       end
 
       it 'calls save on Mongoid::Document' do
         expect_any_instance_of(Mongoid::Document).to receive(:save)
-        object = klass.new
         object.save
-      end
-    end
-
-    describe '#new_revision' do
-      it 'calls new_revision on revision_source' do
-        skip
       end
     end
   end
