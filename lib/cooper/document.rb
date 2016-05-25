@@ -5,8 +5,11 @@ module Cooper
     include Mongoid::Document
 
     def save
-      revisions.push('r')
+      revisions.push(new_revision)
       super
+    end
+
+    def new_revision
     end
 
     included do
@@ -16,6 +19,13 @@ module Cooper
     end
 
     class_methods do
+      def revision_source
+        object = Object.new
+        object.define_singleton_method(:new_revision) do |_|
+        end
+        object
+      end
+
       def revision_field(field)
         revision_fields << field
         self.field field

@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.files = `git ls-files -z`.split("\x0")
                                 .reject { |f| f.match(%r{^(spec)/}) }
-  spec.test_files  = spec.files.grep(%r{^(spec)/})
+  spec.test_files = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'mongoid', '~> 5.1'

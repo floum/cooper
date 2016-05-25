@@ -3,4 +3,3 @@ require 'mongoid'
 
 require 'cooper/version'
 require 'cooper/document'
-
