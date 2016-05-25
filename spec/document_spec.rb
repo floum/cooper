@@ -69,5 +69,11 @@ describe Cooper::Document do
         object.save
       end
     end
+
+    describe '#checkout' do
+      it 'checks out the appropriate revision' do
+        pending
+      end
+    end
   end
 end
