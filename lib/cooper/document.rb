@@ -4,22 +4,15 @@ module Cooper
     extend ActiveSupport::Concern
     include Mongoid::Document
 
-    def revisions
-      @revisions.dup
-    end
-
-    def initialize(*)
-      @revisions = []
+    def save
+      revisions.push('r')
       super
-    end
-
-    def commit
-      @revisions.push('r')
     end
 
     included do
       class_attribute :revision_fields
       self.revision_fields = []
+      field :revisions, type: Array, default: []
     end
 
     class_methods do

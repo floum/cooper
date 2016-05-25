@@ -8,11 +8,11 @@ describe Cooper::Document do
       end
     end
 
-    it 'creates a list of revision_fields for the class' do
+    it 'creates an array of revision_fields for the class' do
       expect(klass.revision_fields).to eq []
     end
 
-    it 'includes Mongoid::Document as well' do
+    it 'includes Mongoid::Document' do
       expect(klass.included_modules).to include(Mongoid::Document)
     end
 
@@ -28,7 +28,7 @@ describe Cooper::Document do
       end
 
       it 'creates a field for mongoid' do
-        mock(klass).field(:field)
+        expect(klass).to receive(:field).with(:field)
         klass.revision_field :field
       end
 
@@ -44,10 +44,13 @@ describe Cooper::Document do
       end
     end
 
-    describe '#commit' do
+    describe '#save' do
+      before do
+        allow_any_instance_of(Mongoid::Document).to receive(:save).and_return(true)
+      end
       it 'creates a new revision' do
         object = klass.new
-        expect { object.commit }.to change { object.revisions.size }.by(1)
+        expect { object.save }.to change { object.revisions.size }.by(1)
       end
     end
   end
