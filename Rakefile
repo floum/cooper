@@ -13,5 +13,5 @@ begin
 
   task default: 'spec:all'
 rescue LoadError
+  p 'RSpec is not available on this machine'
 end
-

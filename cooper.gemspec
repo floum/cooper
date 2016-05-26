@@ -4,6 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cooper/version'
 
 Gem::Specification.new do |spec|
+  spec.date = '2016-05-26'
+  spec.required_ruby_version = '>= 2.3'
+
   spec.name          = 'cooper'
   spec.version       = Cooper::VERSION
   spec.authors       = ['Efflam Castel']
@@ -31,12 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.5'
-
-  spec.required_ruby_version = '>= 2.3'
-
-  spec.date = '2016-05-24'
-
-  spec.require_paths = ['lib']
 
   spec.license = 'MIT'
 end
