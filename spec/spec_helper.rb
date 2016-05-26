@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'cooper'
 
 pwd = File.expand_path(__dir__)
