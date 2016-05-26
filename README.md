@@ -1,6 +1,9 @@
 # Cooper
 
-[![Code Climate](https://codeclimate.com/github/floum/cooper/badges/gpa.svg)](https://codeclimate.com/github/floum/cooper) [![Test Coverage](https://codeclimate.com/github/floum/cooper/badges/coverage.svg)](https://codeclimate.com/github/floum/cooper/coverage)
+[![Code Climate](https://codeclimate.com/github/floum/cooper/badges/gpa.svg)](https://codeclimate.com/github/floum/cooper)
+[![Test Coverage](https://codeclimate.com/github/floum/cooper/badges/coverage.svg)](https://codeclimate.com/github/floum/cooper/coverage)
+[![Build Status](https://travis-ci.org/floum/cooper.svg?branch=master)](https://travis-ci.org/floum/cooper)
+[![Dependency Status](https://gemnasium.com/badges/github.com/floum/cooper.svg)](https://gemnasium.com/github.com/floum/cooper)
 
 A schema-less revisioning database project built on [Mongoid](https://github.com/mongodb/mongoid)
 
