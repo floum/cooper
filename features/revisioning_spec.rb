@@ -34,15 +34,17 @@ describe 'Revisioning feature' do
 
   describe 'Checking out documents' do
     let(:object) do
-      CooperDocument.new.tap { |doc| doc.revision_source = revision_source }
+      CooperDocument.new.tap { |doc|
+        doc.revision_source = Cooper::RevisionSource.new
+      }
     end
     it 'works as expected' do
-      object.key = 'value0'
+      object.key = 'value1'
       object.save
-      object.update_attributes(key: 'value1')
       object.update_attributes(key: 'value2')
-      object.checkout(0)
-      expect(object.key).to eq 'value0'
+      object.update_attributes(key: 'value3')
+      object.checkout(1)
+      expect(object.key).to eq 'value1'
     end
   end
 end

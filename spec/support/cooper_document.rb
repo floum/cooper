@@ -1,5 +1,5 @@
 class CooperDocument
   include Cooper::Document
 
-  field :key, type: String
+  revision_field :key
 end

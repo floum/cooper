@@ -71,8 +71,19 @@ describe Cooper::Document do
     end
 
     describe '#checkout' do
+      let(:revisions) { [{ id: 4, key: 4 }, { id: 2, key: 2 }] }
+
+      before do
+        klass.revision_field :key
+        object.revisions = revisions
+      end
+
       it 'checks out the appropriate revision' do
-        pending
+        expect(object.checkout(3).key).to eq(2)
+      end
+
+      it 'returns nil if the object was not created yet' do
+        expect(object.checkout(1)).to be_nil
       end
     end
   end

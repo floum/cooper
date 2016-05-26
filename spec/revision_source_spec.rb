@@ -22,8 +22,11 @@ describe Cooper::RevisionSource do
     end
 
     it 'increments the revision_id counter' do
-      expect { revision_source.new_revision(object) }.to change {
-       revision_source.revision_id }.by(1)
+      expect {
+        revision_source.new_revision(object)
+      }.to change {
+        revision_source.instance_eval { @revision_id }
+      }.by(1)
     end
   end
 end

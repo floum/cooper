@@ -11,8 +11,16 @@ module Cooper
     end
 
     def save
-      revisions.push(new_revision)
+      revisions.unshift(new_revision)
       super
+    end
+
+    def checkout(revision_id)
+      return nil unless find_revision(revision_id)
+      find_revision(revision_id).each do |field, value|
+        send("#{field}=", value)
+      end
+      self
     end
 
     included do
@@ -32,6 +40,10 @@ module Cooper
 
     def new_revision
       revision_source.new_revision(self)
+    end
+
+    def find_revision(id)
+      revisions.find { |revision| revision[:id] <= id }
     end
   end
 end
