@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.5'
 
-  spec.required_ruby_version = '>= 2.2'
+  spec.required_ruby_version = '>= 2.3'
 
   spec.date = '2016-05-24'
 
