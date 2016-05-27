@@ -36,7 +36,7 @@ describe Cooper::Document do
       end
 
       it 'creates a field for mongoid' do
-        expect(klass).to receive(:field).with(:field)
+        expect(klass).to receive(:field).with(:field, {})
         klass.revision_field :field
       end
 
