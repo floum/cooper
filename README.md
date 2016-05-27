@@ -52,6 +52,7 @@ It uses Redis on port 6379 to get the current revision count
 
 ## Road Map
 
+* Checkout by date or revision_id
 * Persist revision count from mongodb
 * Allow Redis configuration
 
