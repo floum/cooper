@@ -36,8 +36,8 @@ describe Cooper::Document do
       end
 
       it 'creates a field for mongoid' do
-        expect(klass).to receive(:field).with(:field, {})
-        klass.revision_field :field
+        expect(klass).to receive(:field).with(:field, type: String)
+        klass.revision_field(:field, type: String)
       end
 
       it 'adds the revisioned fields to the class list' do
@@ -53,26 +53,42 @@ describe Cooper::Document do
     end
 
     describe '#save' do
-      before do
-        allow_any_instance_of(Mongoid::Document).to(
-          receive(:save).and_return(true)
-        )
-      end
-
-      it 'creates a new revision' do
-        expect(object.revision_source).to receive(:new_revision)
-        object.save
-      end
-
       it 'calls save on Mongoid::Document' do
         expect_any_instance_of(Mongoid::Document).to receive(:save)
         object.save
       end
 
-      context 'when successful' do
+      context 'when mongoid is successful' do
+        before do
+          allow_any_instance_of(Mongoid::Document).to(
+            receive(:save).and_return(true)
+          )
+        end
+
+        it 'creates a new revision' do
+          expect { object.save }.to change { object.revisions.size }.by(1)
+        end
+
         it 'notifies the save to revision source' do
           expect(object.revision_source).to receive(:notify_save)
           object.save
+        end
+      end
+
+      context 'when mongoid fails' do
+        before do
+          allow_any_instance_of(Mongoid::Document).to(
+            receive(:save).and_return(false)
+          )
+        end
+
+        it 'does not notify the save to the revision source' do
+          expect(object.revision_source).not_to receive(:notify_save)
+          object.save
+        end
+
+        it 'does not create a new revision' do
+          expect { object.save }.not_to change { object.revisions }
         end
       end
     end

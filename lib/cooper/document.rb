@@ -13,8 +13,12 @@ module Cooper
 
     def save
       revisions.unshift(new_revision)
-      super
-      revision_source.notify_save
+      if super
+        revision_source.notify_save
+      else
+        revisions.shift
+        false
+      end
     end
 
     def checkout(revision_id)

@@ -44,14 +44,14 @@ p record.key
     
 ## Features
 
-Cooper::Document behaves like(-ish for now) a Mongoid::Document
+Cooper::Document behaves like a Mongoid::Document
 
 It adds the capabilities of checking out declared revision fields
+
 It uses Redis on port 6379 to get the current revision count
 
 ## Road Map
 
-* Enable validations
 * Persist revision count from mongodb
 * Allow Redis configuration
 
