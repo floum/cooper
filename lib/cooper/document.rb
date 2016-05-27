@@ -32,9 +32,9 @@ module Cooper
     end
 
     class_methods do
-      def revision_field(field)
+      def revision_field(field, options = {})
         revision_fields << field
-        self.field field
+        self.field field, options
       end
     end
 

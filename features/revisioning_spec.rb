@@ -3,7 +3,7 @@ describe 'Revisioning feature' do
   class RevisionedObject
     include Cooper::Document
 
-    revision_field :key
+    revision_field :key, type: String
   end
 
   describe 'Saving documents' do

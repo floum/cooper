@@ -18,6 +18,9 @@ Install cooper from the command prompt
 ```ruby
 require 'cooper'
 
+# Frameworks usually manage this step on their own
+Mongoid.load!('/path/to/config/mongoid.yml', :environment)
+
 class Record
   include Cooper::Document
 
@@ -25,8 +28,6 @@ class Record
 end
 
 record = Record.new(key: 1)
-
-record.revision_source = Cooper::RevisionSource.new
 
 record.save
 p record.key
@@ -46,11 +47,13 @@ p record.key
 Cooper::Document behaves like(-ish for now) a Mongoid::Document
 
 It adds the capabilities of checking out declared revision fields
+It uses Redis on port 6379 to get the current revision count
 
 ## Road Map
 
-* RevisionSource persistence
-* Cooper::Document.revision_field parameters
+* Enable validations
+* Persist revision count from mongodb
+* Allow Redis configuration
 
 ## Tests
 
