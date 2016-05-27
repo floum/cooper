@@ -68,6 +68,13 @@ describe Cooper::Document do
         expect_any_instance_of(Mongoid::Document).to receive(:save)
         object.save
       end
+
+      context 'when successful' do
+        it 'notifies the save to revision source' do
+          expect(object.revision_source).to receive(:notify_save)
+          object.save
+        end
+      end
     end
 
     describe '#checkout' do

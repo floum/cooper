@@ -7,12 +7,14 @@ module Cooper
     attr_accessor :revision_source
 
     def initialize(*)
+      self.revision_source = REVISION_SOURCE
       super
     end
 
     def save
       revisions.unshift(new_revision)
       super
+      revision_source.notify_save
     end
 
     def checkout(revision_id)

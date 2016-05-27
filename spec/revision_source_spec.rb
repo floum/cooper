@@ -20,12 +20,14 @@ describe Cooper::RevisionSource do
     it 'creates an id for the revision' do
       expect(revision_source.new_revision(object)[:id]).not_to be_nil
     end
+  end
 
-    it 'increments the revision_id counter' do
+  describe '#notify_save' do
+    it 'increments revision_id by 1' do
       expect {
-        revision_source.new_revision(object)
+        revision_source.notify_save
       }.to change {
-        revision_source.instance_eval { @revision_id }
+        revision_source.revision_id
       }.by(1)
     end
   end
