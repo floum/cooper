@@ -36,9 +36,9 @@ describe 'Revisioning feature' do
       object.save
       object.update_attributes(key: 'value2')
       object.update_attributes(key: 'value3')
-      object.checkout 1
+      object.checkout id: 1
       expect(object.key).to eq 'value1'
-      object.checkout 3
+      object.checkout id: 3
       expect(object.key).to eq 'value3'
     end
     it 'manages multiple objects' do
@@ -56,9 +56,9 @@ describe 'Revisioning feature' do
       object_2.save
       object_1.key = '1.6'
       object_1.save
-      object_1.checkout 4
+      object_1.checkout id: 4
       expect(object_1.key).to eq '1.4'
-      object_2.checkout 4
+      object_2.checkout id: 4
       expect(object_2.key).to eq '2.3'
     end
   end

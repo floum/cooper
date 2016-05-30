@@ -20,6 +20,16 @@ describe Cooper::RevisionSource do
     it 'creates an id for the revision' do
       expect(revision_source.new_revision(object)[:id]).not_to be_nil
     end
+
+    it 'creates a created_at field for the revision' do
+      clock = Object.new
+      allow(clock).to receive(:now).and_return(Time.new(2016))
+      revision_source.clock = clock
+
+      revision = revision_source.new_revision(object)
+
+      expect(revision[:created_at]).to eq Time.new(2016)
+    end
   end
 
   describe '#notify_save' do

@@ -19,13 +19,18 @@ module Cooper
         revisions.shift
         false
       end
+    rescue StandardError
+      revisions.shift
+      false
     end
 
-    def checkout(revision_id)
-      return nil unless find_revision(revision_id)
-      find_revision(revision_id).each do |field, value|
-        send("#{field}=", value)
-      end
+    def checkout(options = {})
+      return nil unless find_revision(options)
+
+      find_revision(options).reject { |key, _| key == :created_at }
+                            .each do |field, value|
+                              send("#{field}=", value)
+                            end
       self
     end
 
@@ -48,8 +53,15 @@ module Cooper
       revision_source.new_revision(self)
     end
 
-    def find_revision(id)
-      revisions.find { |revision| revision[:id] <= id }
+    def find_revision(options)
+      raise ArgumentError if ([:time, :id] - options.keys).empty?
+      id = options.fetch(:id) { nil }
+      time = options.fetch(:time) { nil }
+      if id
+        revisions.find { |revision| revision[:id] <= id }
+      else
+        revisions.find { |revision| revision[:created_at] <= time }
+      end
     end
   end
 end

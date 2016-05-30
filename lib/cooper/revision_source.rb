@@ -1,8 +1,11 @@
 module Cooper
   # Default revisions factory for cooper documents
   class RevisionSource
-    def initialize
+    attr_writer :clock
+
+    def initialize(clock = Time)
       @source = Redis.new
+      @clock = clock
     end
 
     def revision_id
@@ -14,7 +17,10 @@ module Cooper
             .revision_fields
             .each_with_object({}) { |field, revision|
               revision[field] = object.send(field)
-            }.tap { |revision| revision[:id] = revision_id + 1 }
+            }.tap { |revision|
+              revision[:id] = revision_id + 1
+              revision[:created_at] = @clock.now
+            }
     end
 
     def notify_save

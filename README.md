@@ -37,9 +37,13 @@ record.update_attributes(key: 2)
 p record.key
 #=> 2
 
-record.checkout(1)
+record.checkout(id: 1)
 p record.key
 #=> 1
+
+record.checkout(time: Time.now)
+p record.key
+#=> 2
 ```
     
 ## Features
@@ -52,7 +56,6 @@ It uses Redis on port 6379 to get the current revision count
 
 ## Road Map
 
-* Checkout by date or revision_id
 * Persist revision count from mongodb
 * Allow Redis configuration
 
