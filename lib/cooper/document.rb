@@ -11,7 +11,7 @@ module Cooper
       super
     end
 
-    def save(options = {})
+    def save
       if valid?
         revisions.unshift(new_revision)
         begin
