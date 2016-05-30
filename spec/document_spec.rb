@@ -53,16 +53,19 @@ describe Cooper::Document do
     end
 
     describe '#save' do
-      it 'calls save on Mongoid::Document' do
-        expect_any_instance_of(Mongoid::Document).to receive(:save)
-        object.save
-      end
-
-      context 'when mongoid is successful' do
+      context 'when valid' do
         before do
+          allow_any_instance_of(Mongoid::Document).to(
+            receive(:valid?).and_return(true)
+          )
           allow_any_instance_of(Mongoid::Document).to(
             receive(:save).and_return(true)
           )
+        end
+
+        it 'calls save on Mongoid::Document' do
+          expect_any_instance_of(Mongoid::Document).to receive(:save)
+          object.save
         end
 
         it 'creates a new revision' do
@@ -75,11 +78,9 @@ describe Cooper::Document do
         end
       end
 
-      context 'when mongoid fails' do
+      context 'when invalid' do
         before do
-          allow_any_instance_of(Mongoid::Document).to(
-            receive(:save).and_return(false)
-          )
+          allow(object).to receive(:valid?).and_return(false)
         end
 
         it 'does not notify the save to the revision source' do

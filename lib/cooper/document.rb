@@ -11,26 +11,27 @@ module Cooper
       super
     end
 
-    def save
-      revisions.unshift(new_revision)
-      if super
+    def save(options = {})
+      if valid?
+        revisions.unshift(new_revision)
+        begin
+          super(validate: false)
+        rescue MongoidError => e
+          revisions.shift
+          raise e
+        end
         revision_source.notify_save
-      else
-        revisions.shift
-        false
       end
-    rescue StandardError
-      revisions.shift
-      false
     end
 
     def checkout(options = {})
       return nil unless find_revision(options)
 
-      find_revision(options).reject { |key, _| key == :created_at }
-                            .each do |field, value|
-                              send("#{field}=", value)
-                            end
+      find_revision(options)
+        .reject { |key, _| key == :created_at }
+        .each do |field, value|
+          send("#{field}=", value)
+        end
       self
     end
 

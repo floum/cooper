@@ -58,6 +58,7 @@ It uses Redis on port 6379 to get the current revision count
 
 * Persist revision count from mongodb
 * Allow Redis configuration
+* Enable validation skipping on save
 
 ## Tests
 
