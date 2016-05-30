@@ -3,6 +3,7 @@ require 'redis'
 
 require 'cooper/version'
 require 'cooper/document'
+require 'cooper/revision_finder'
 require 'cooper/revision_source'
 
 module Cooper

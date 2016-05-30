@@ -28,7 +28,6 @@ module Cooper
       return nil unless find_revision(options)
 
       find_revision(options)
-        .reject { |key, _| key == :created_at }
         .each do |field, value|
           send("#{field}=", value)
         end
@@ -55,14 +54,7 @@ module Cooper
     end
 
     def find_revision(options)
-      raise ArgumentError if ([:time, :id] - options.keys).empty?
-      id = options.fetch(:id) { nil }
-      time = options.fetch(:time) { nil }
-      if id
-        revisions.find { |revision| revision[:id] <= id }
-      else
-        revisions.find { |revision| revision[:created_at] <= time }
-      end
+      RevisionFinder.new(self).find(options)
     end
   end
 end
