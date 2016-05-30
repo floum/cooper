@@ -18,7 +18,7 @@ Install cooper from the command prompt
 ```ruby
 require 'cooper'
 
-# Frameworks usually manage this step on their own
+# Frameworks usually manage this step
 Mongoid.load!('/path/to/config/mongoid.yml', :environment)
 
 class Record

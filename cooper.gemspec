@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
 
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = 'http://localhost'
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
     raise 'Upgrade RubyGems to protect against public gem pushes.'
   end
