@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'rr'
 require 'database_cleaner'
 require 'cooper'
 
@@ -16,6 +17,7 @@ class Minitest::Spec
   before :each do
     DatabaseCleaner.start
     Cooper::REVISION_SOURCE.instance_eval { @source.set('revision_id', 0) }
+    Cooper::REVISION_SOURCE.clock = Time
   end
 
   after :each do

@@ -12,13 +12,24 @@ begin
     task all: [:features, :unit]
   end
 
-  task default: 'spec:all'
 rescue LoadError
   p 'RSpec is not available on this machine'
 end
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'test'
-  t.pattern = 'test/features/**/*_test.rb'
-  t.warning = false
+namespace :test do
+  Rake::TestTask.new(:features) do |t|
+    t.libs << 'test'
+    t.pattern = 'features/**/*_test.rb'
+    t.warning = false
+  end
+
+  Rake::TestTask.new(:unit) do |t|
+    t.libs << 'test'
+    t.pattern = 'test/**/*_test.rb'
+    t.warning = false
+  end
+
+  task all: [:features, :unit]
 end
+
+task default: 'test:all'
