@@ -16,7 +16,7 @@ module Cooper
         revisions.unshift(new_revision)
         begin
           super(validate: false)
-        rescue MongoidError => e
+        rescue Mongoid::Errors::MongoidError => e
           revisions.shift
           raise e
         end

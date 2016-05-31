@@ -4,7 +4,7 @@ describe Cooper::Document do
   describe 'when included' do
     let(:klass) do
       Class.new do
-        include Cooper::Document
+        include Cooper::Document 
       end
     end
 
@@ -36,8 +36,8 @@ describe Cooper::Document do
       end
 
       it 'creates a field for mongoid' do
-        stub(klass).field(:field, type: String)
-        # klass.revision_field(:field, type: String)
+        mock(klass).field(:field, type: String)
+        klass.revision_field(:field, type: String)
       end
 
       it 'adds the revisioned fields to the class list' do
@@ -55,35 +55,30 @@ describe Cooper::Document do
     describe '#save' do
       describe 'when valid' do
         before do
-          stub(Mongoid::Document).valid? { true }
-          stub(Mongoid::Document).save { true }
+          stub(revision_source).new_revision(object) { {} }
+          stub(revision_source).notify_save
+          stub(object).valid? { true }
         end
 
         it 'calls save on Mongoid::Document' do
           skip
-          object.save
         end
 
         it 'creates a new revision' do
           revision_count = object.revisions.count
           object.save
-          object.revisions_count.must_equal(revision_count + 1)
+          object.revisions.count.must_equal(revision_count + 1)
         end
 
         it 'notifies the save to revision source' do
-          stub(revision_source).new_revision(object)
-          object.save.must_send :notify_save, revision_source
+          mock(revision_source).notify_save
+          object.save
         end
       end
 
       describe 'when invalid' do
         before do
           stub(object).valid? { false }
-        end
-
-        it 'does not notify the save to the revision source' do
-          skip
-          object.save
         end
 
         it 'does not create a new revision' do

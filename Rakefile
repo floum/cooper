@@ -1,15 +1,6 @@
 require 'bundler/gem_tasks'
 require 'rake/testtask'
 
-begin
-  require 'rspec/core/rake_task'
-  namespace :spec do
-    RSpec::Core::RakeTask.new(:unit)
-  end
-rescue LoadError
-  p 'RSpec is not available on this machine'
-end
-
 namespace :test do
   Rake::TestTask.new(:features) do |t|
     t.libs << 'features'
