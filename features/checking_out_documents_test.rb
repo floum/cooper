@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'features_helper'
 
 describe 'Checking Out Documents' do
   # cooper document with one key example

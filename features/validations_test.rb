@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'features_helper'
 
 describe 'Validations' do
   # basic cooper document validations example

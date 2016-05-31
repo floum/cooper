@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'features_helper'
 
 describe 'Mongoid Configuration' do
   # Basic mongoid document example
