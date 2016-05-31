@@ -1,4 +1,5 @@
 require 'bundler/gem_tasks'
+require 'rake/testtask'
 
 begin
   require 'rspec/core/rake_task'
@@ -14,4 +15,10 @@ begin
   task default: 'spec:all'
 rescue LoadError
   p 'RSpec is not available on this machine'
+end
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'test'
+  t.pattern = 'test/features/**/*_test.rb'
+  t.warning = false
 end

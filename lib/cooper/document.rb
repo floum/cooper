@@ -21,16 +21,17 @@ module Cooper
           raise e
         end
         revision_source.notify_save
+        true
+      else
+        false
       end
     end
 
     def checkout(options = {})
-      return nil unless find_revision(options)
+      revision = find_revision(options)
+      return nil unless revision
 
-      find_revision(options)
-        .each do |field, value|
-          send("#{field}=", value)
-        end
+      apply_revision(revision)
       self
     end
 
@@ -55,6 +56,10 @@ module Cooper
 
     def find_revision(options)
       RevisionFinder.new(self).find(options)
+    end
+
+    def apply_revision(revision)
+      revision.each do |field, value| send("#{field}=", value) end
     end
   end
 end
