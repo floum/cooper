@@ -35,10 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.5'
-  spec.add_development_dependency 'minitest', '~> 5.9'
-  spec.add_development_dependency 'minitest-reporters', '~> 1.1'
-  spec.add_development_dependency 'database_cleaner', '~> 1.5'
-  spec.add_development_dependency 'rr'
 
   spec.license = 'MIT'
 end

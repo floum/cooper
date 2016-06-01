@@ -16,22 +16,21 @@ module Cooper
         revisions.unshift(new_revision)
         begin
           super(validate: false)
-        rescue Mongoid::Errors::MongoidError => e
+        rescue MongoidError => e
           revisions.shift
           raise e
         end
         revision_source.notify_save
-        true
-      else
-        false
       end
     end
 
     def checkout(options = {})
-      revision = find_revision(options)
-      return nil unless revision
+      return nil unless find_revision(options)
 
-      apply_revision(revision)
+      find_revision(options)
+        .each do |field, value|
+          send("#{field}=", value)
+        end
       self
     end
 
@@ -56,10 +55,6 @@ module Cooper
 
     def find_revision(options)
       RevisionFinder.new(self).find(options)
-    end
-
-    def apply_revision(revision)
-      revision.each do |field, value| send("#{field}=", value) end
     end
   end
 end

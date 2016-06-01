@@ -13,10 +13,6 @@ Install cooper from the command prompt
 
   `gem install cooper`
 
-or add this line to your Gemfile and run `bundle`
-
-  `gem 'cooper'`
-
 ## Usage
 
 ```ruby
