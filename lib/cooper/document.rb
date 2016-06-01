@@ -13,15 +13,13 @@ module Cooper
 
     def save
       if valid?
-        revisions.unshift(new_revision)
-        begin
-          super(validate: false)
-        rescue MongoidError => e
-          revisions.shift
-          raise e
-        end
-        revision_source.notify_save
+        execute_save
+      else
+        false
       end
+    rescue Mongoid::Errors::MongoidError => e
+      revisions.shift
+      raise e
     end
 
     def checkout(options = {})
@@ -55,6 +53,13 @@ module Cooper
 
     def find_revision(options)
       RevisionFinder.new(self).find(options)
+    end
+
+    def execute_save
+      revisions.unshift(new_revision)
+      method(:save).super_method.call(validate: false)
+      revision_source.notify_save
+      true
     end
   end
 end

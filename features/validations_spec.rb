@@ -8,7 +8,7 @@ describe 'Validations' do
     validates :single_digit, inclusion: { in: (0..9) }
   end
 
-  it 'works just like Mongoid::Document' do
+  it 'work like Mongoid::Document' do
     object = ValidatedObject.new(single_digit: 5)
     expect(object.save).to be_truthy
 
