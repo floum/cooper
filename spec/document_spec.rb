@@ -76,6 +76,22 @@ describe Cooper::Document do
           expect(object.revision_source).to receive(:notify_save)
           object.save
         end
+
+        context 'when mongo returns an error' do
+          # rubocop:disable Lint/HandleExceptions
+          it 'revisions count wont be changed' do
+            allow_any_instance_of(Mongoid::Document).to(
+              receive(:save).and_raise(Mongoid::Errors::MongoidError)
+            )
+            expect {
+              begin
+                object.save
+              rescue Mongoid::Errors::MongoidError
+              end
+            }.not_to change { object.revisions.count }
+          end
+          # rubocop:enable Lint/HandleExceptions
+        end
       end
 
       context 'when invalid' do
