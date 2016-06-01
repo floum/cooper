@@ -19,9 +19,6 @@ module Cooper
       else
         false
       end
-    rescue Mongoid::Errors::MongoidError => e
-      revisions.shift
-      raise e
     end
 
     def checkout(options = {})
@@ -62,6 +59,9 @@ module Cooper
       yield
       revision_source.notify_save
       true
+    rescue StandardError => e
+      revisions.shift
+      raise e
     end
   end
 end
