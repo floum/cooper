@@ -1,7 +1,7 @@
 describe Cooper::RevisionFinder do
   let(:clock) { Time }
   let(:document) { double }
-  
+
   before do
     allow(document).to receive(:revisions).and_return(
       [
@@ -11,12 +11,12 @@ describe Cooper::RevisionFinder do
       ]
     )
   end
-  
+
   subject { Cooper::RevisionFinder.new(document) }
-  
+
   describe '#find' do
     it 'raises an error when options does not include date or id' do
-      expect { subject.find() }.to(
+      expect { subject.find }.to(
         raise_error ArgumentError
       )
     end
