@@ -13,7 +13,9 @@ module Cooper
 
     def save
       if valid?
-        execute_save
+        revision do
+          super(validate: false)
+        end
       else
         false
       end
@@ -55,9 +57,9 @@ module Cooper
       RevisionFinder.new(self).find(options)
     end
 
-    def execute_save
+    def revision
       revisions.unshift(new_revision)
-      method(:save).super_method.call(validate: false)
+      yield
       revision_source.notify_save
       true
     end
