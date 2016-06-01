@@ -5,8 +5,11 @@ begin
   namespace :spec do
     RSpec::Core::RakeTask.new(:features) do |t|
       t.pattern = 'features/**/*_spec.rb'
+      t.rspec_opts = '--require features_helper'
     end
-    RSpec::Core::RakeTask.new(:unit)
+    RSpec::Core::RakeTask.new(:unit) do |t|
+      t.rspec_opts = '--require spec_helper'
+    end
 
     task all: [:features, :unit]
   end
