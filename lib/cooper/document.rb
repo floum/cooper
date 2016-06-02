@@ -11,13 +11,11 @@ module Cooper
       super
     end
 
-    def save
-      if valid?
-        revision do
-          super(validate: false)
+    def save(options = {})
+      validation_gate(options.fetch(:validate) { true }) do
+        with_new_revision do
+          super(options.merge(validate: false))
         end
-      else
-        false
       end
     end
 
@@ -54,7 +52,15 @@ module Cooper
       RevisionFinder.new(self).find(options)
     end
 
-    def revision
+    def validation_gate(validate)
+      if validate && !valid?
+        false
+      else
+        yield
+      end
+    end
+
+    def with_new_revision
       revisions.unshift(new_revision)
       yield
       revision_source.notify_save

@@ -9,11 +9,8 @@ module Cooper
     end
 
     def find(options = {})
-      raise ArgumentError unless (OPTIONS & options.keys).size == 1
-      id = options.fetch(:id) {}
-      time = options.fetch(:time) {}
-      search = id ? by_id(id) : by_time(time)
-      revision = revisions.find(&search)
+      return nil if (OPTIONS & options.keys).empty?
+      revision = revisions.find(&search(options))
       revision.reject { |key, _| METADATA_FIELDS.include?(key) } if revision
     end
 
@@ -21,6 +18,10 @@ module Cooper
 
     def revisions
       document.revisions
+    end
+
+    def search(options)
+      by_time(options.fetch(:time) { return by_id(options[:id]) })
     end
 
     def by_id(id)

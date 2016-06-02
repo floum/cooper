@@ -11,7 +11,7 @@ begin
       t.rspec_opts = '--require spec_helper'
     end
 
-    task all: [:features, :unit]
+    task all: [:unit, :features]
   end
 
   task default: 'spec:all'

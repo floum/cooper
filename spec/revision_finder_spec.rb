@@ -15,16 +15,12 @@ describe Cooper::RevisionFinder do
   subject { Cooper::RevisionFinder.new(document) }
 
   describe '#find' do
-    it 'raises an error when options does not include date or id' do
-      expect { subject.find }.to(
-        raise_error ArgumentError
-      )
+    it 'returns nil when options does not include date or id' do
+      expect(subject.find).to be_nil
     end
 
-    it 'raises an error when both time and id options are used' do
-      expect { subject.find(id: 1, time: clock.now) }.to(
-        raise_error ArgumentError
-      )
+    it 'prioritizes time over id' do
+      expect(subject.find(id: 7, time: Time.new(2016, 2))[:key]).to eq 5
     end
 
     it 'removes the id field' do

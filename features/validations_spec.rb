@@ -10,9 +10,14 @@ describe 'Validations' do
 
   it 'work like Mongoid::Document' do
     object = ValidatedObject.new(single_digit: 5)
-    expect(object.save).to be_truthy
+    expect(object.save).to eq true
 
     object = ValidatedObject.new(single_digit: 10)
-    expect(object.save).not_to be_truthy
+    expect(object.save).to eq false
+  end
+
+  it 'can be bypassed with validate: false' do
+    object = ValidatedObject.new(single_digit: 10)
+    expect(object.save(validate: false)).to eq true
   end
 end
