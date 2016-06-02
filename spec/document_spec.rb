@@ -1,5 +1,16 @@
 require 'spec_helper'
 
+class InvalidDocument
+  include Cooper::Document
+  def valid?
+    false
+  end
+end
+
+class CooperDocument
+  include Cooper::Document
+end
+
 describe Cooper::Document do
   context 'when included' do
     let(:klass) do
@@ -53,23 +64,16 @@ describe Cooper::Document do
     end
 
     describe '#save' do
+      let(:object) { CooperDocument.new }
+      before do
+        object.revision_source = revision_source
+        allow(revision_source).to receive(:notify_save)
+        allow(revision_source).to(
+          receive(:new_revision).with(object).and_return({})
+        )
+      end
+
       context 'when valid' do
-        before do
-          allow_any_instance_of(Mongoid::Document).to(
-            receive(:valid?).and_return(true)
-          )
-          allow_any_instance_of(Mongoid::Document).to(
-            receive(:save).and_return(true)
-          )
-          allow(revision_source).to receive(:new_revision).with(object).and_return({})
-          allow(revision_source).to receive(:notify_save)
-        end
-
-        it 'calls save on Mongoid::Document' do
-          expect_any_instance_of(Mongoid::Document).to receive(:save)
-          object.save
-        end
-
         it 'creates a new revision' do
           expect { object.save }.to change { object.revisions.size }.by(1)
         end
@@ -111,16 +115,22 @@ describe Cooper::Document do
         end
 
         context 'with validate: false' do
+          let(:object) { InvalidDocument.new }
+          before do
+            object.revision_source = revision_source
+            allow(revision_source).to(
+              receive(:new_revision).with(object).and_return({})
+            )
+          end
+
           it 'is still saved' do
-            allow(revision_source).to receive(:new_revision).with(object).and_return({})
-            skip
             expect(object.save(validate: false)).to eq true
           end
 
           it 'creates a new revision' do
-            allow(revision_source).to receive(:new_revision).with(object).and_return({})
-            skip
-            expect { object.save(validate: false) }.to change { object.revisions.size }.by 1
+            expect { object.save(validate: false) }.to(
+              change { object.revisions.count }.by(1)
+            )
           end
         end
       end
@@ -131,7 +141,7 @@ describe Cooper::Document do
         [
           { created_at: Time.new(2016), id: 4, key: 4 },
           { created_at: Time.new(2015), id: 2, key: 2 }
-      ]
+        ]
       }
 
       before do
